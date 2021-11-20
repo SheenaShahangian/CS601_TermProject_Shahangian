@@ -1,0 +1,702 @@
+/* --------------------- PAGE BODY STYLES ----------------------- */
+
+/* Style of the body of the page, which should be white and take up the browser window */
+body {
+    background-color:#ffffff; /* the background of all pages should be white */
+    width: 100%;
+    margin: 0;
+}
+
+
+
+/* --------------------- NAV BAR STYLES ----------------------- */
+
+/* Style of the nav bar */
+nav {
+    width: 100%; /* take full width of container */
+    background-color: #e9dfd6;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    display: flow-root; /* credit for use of this value: https://css-tricks.com/clearfix-a-lesson-in-web-development-evolution/ */
+}
+
+
+/* Style of the logo, which will default be on the left side of the screen */
+.logo_image {
+    float: left; /* logo in top left corner of window */
+    width: 120px; 
+    height:120px;
+}
+
+
+/* Style of the navigation links */
+.nav_links {
+    float: right; /* nav links sit to the right, so as not to compete with the logo */
+    color: #5a665f;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 500;
+    font-size:1.1rem;
+    line-height: 1.3rem;
+    padding: 1.5rem;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* Style when navigation links are hovered over */
+.nav_links:hover {
+    color:#5a665f;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem; /* chunky underline */
+}
+
+
+
+/* --------------------- HEADING STYLES ----------------------- */
+
+/* NOTE ABOUT PADDING: all padding is 1rem for headings + p to ensure 
+consistent margins when resizing for mobile */
+
+/* Style of h1 */
+h1 {
+    color: #5a665f;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 2rem 0.5rem 2rem;
+    padding: 1rem;
+}
+
+
+/* Style of h2 */
+h2 {
+    color: #ccb1a2;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0rem 2rem;
+    padding: 1rem;
+}
+
+
+/* Style the h2 located near the aside to be left aligned */
+#h2_near_aside {
+    text-align: left;
+}
+
+
+/* Style of h3 */
+h3 {
+    color: #5f2e21;
+    font-family:  "Alegreya Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 2rem;
+    padding: 1rem;
+}
+
+
+
+/* --------------------- PARAGRAPH STYLES ----------------------- */
+
+/* Styling of paragraphs of text */
+p {
+    color: #686960;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7rem; /* provides plenty of breathing room */
+    padding: 1rem;
+}
+
+
+/* Style the p in the same section as the aside to be left aligned */
+#p_near_aside {
+    text-align: left;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+/* Styling for blockquote paragraphs */
+blockquote p {
+    color: #f8f4f1;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0 auto; /* center blockquote text in its container */
+    width: 50%; /* reduces possible text width for a chunkier look */
+}
+
+
+
+/* --------------------- BLOCKQUOTE + ASIDE STYLES ------------------------ */
+
+/* Styling for the blockquote elements */
+blockquote {
+    background-image: url("../multimedia/independence-pass.jpg"); /* background image for blockquote */
+    background-repeat: no-repeat; /* I don't want the image to repeat */
+    background-attachment: fixed; /* used to create dynamic look */
+    background-position: 50% 50%; /*center center positioning */
+    padding: 13rem 0rem; /* to breathing room around the text */
+    margin:1rem auto; /* ensures no white space on sides */
+}
+
+
+/* Styling for an aside */
+aside {
+    float: right; /* float to the righthand side */
+    width: 40%; /* only take up 40% of the container */
+    padding-left: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-top: 3rem;
+    margin-left: 0.8rem;
+    background-color: #f8f4f1; /* provides distinction between aside and the rest of the page */
+}
+
+
+/* the h3 in an aside should have left aligned text */
+aside h3 {
+    text-align: left;
+}
+
+
+/* the ul in an aside should have a margin on the left and bottom 
+and it should have thicker font weight */
+aside ul {
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* --------------------- NON-HAV/NON-FOOTER HYPERLINK + BUTTON STYLES ----------------------- */
+
+/* Style of hyperlinks (non-footer and non-navigation links) */
+a {
+    color:#f17f6a;
+    text-decoration: none;
+}
+
+
+/* Style when a hyperlink (non-navigation links) is hovered over */
+a:hover {
+    text-decoration: underline; /* underline when hovevered over */
+    text-decoration-thickness: 0.2rem; /* make underline chunky */
+}
+
+
+/* Style of buttons */
+button {
+    color:#f17f6a;
+    background-color: #ffffff;
+    border-color: #f17f6a;
+    border-style: solid;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-size: 0.85rem;
+    margin: 1em auto;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Style of buttons when hovered over */
+button:hover {
+    color: #ffffff;
+    background-color: #f17f6a; /* fills in the background */
+}
+
+
+
+/* --------------------- LIST STYLES ----------------------- */
+
+/* Styling for unordered lists */
+ul {
+    text-align: left;
+    color: #686960;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: auto;
+    width: 50%;
+}
+
+
+
+/* --------------------- TABLE STYLES ----------------------- */
+
+/* Styles for table itself */
+table {
+    width: 100%;
+    padding: 1rem; /* retain consistent padding with p */
+    margin: 0 auto; /* center table */
+}
+
+
+/* Set padding and text alignment for all cells, wether th or td */
+th, td {
+    padding: 0.9rem;
+    text-align: left;
+}
+
+
+/* Set styles for th */
+th {
+    color: #686960;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-transform: uppercase; /* makes table headings distinct */
+}
+
+
+/* Set styles for td */
+td {
+    color: #686960;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* Set different background color for odd rows */
+tr.odd {
+    background-color: #f8f4f1; /* makes viewing table's contents easier to follow */
+}
+
+
+
+/* --------------------- IMAGE STYLES + IFRAME ----------------------- */
+
+/* Styling for hero/banner images */
+.hero_image {
+    width: 100%; /* cover the full width of the page */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Style of the iframes used to display videos */
+iframe {
+    border: none;
+    height: 315px; /* height recommended by YouTube */
+    width: 60%;
+}
+
+
+/* Style of figures */
+figure {
+    margin: 1.4rem auto; /* center the figure */
+    width: 80%; /* take up portion of single column */
+    padding: 1rem;
+}
+
+
+/* Style of figcaptions */
+figcaption {
+    color: #686960;
+    font-family: "Alegreya Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+
+
+/* --------------------- SECTION STYLES ----------------------- */
+
+/* Style of sections that are intended to take up a single column */
+.single_column_section {
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: center; /* text should be centered for a symmetrical feel */
+    display: flow-root;
+}
+
+
+/* Style paragraphs in the intro blurb so they are centered */
+.single_column_section p {
+    margin: 1.4rem auto;
+    width: 80%;
+}
+
+
+/* Using flexbox to create two column layout */
+.flex_container {
+    display: flex;
+    justify-content: center; /* center the content */
+    margin: 0 auto;
+}
+
+
+/* Style for a single column in the two column layout. */
+.info_card {
+    width: 50%;
+}
+
+
+/* Style for the image on each card */
+.card_image {
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+
+/* Left align the h3 and paragraphs on the info cards */
+article.info_card>h3, article.info_card>p {
+    text-align: left;
+}
+
+
+/* Styling to set left margin of paragraphs on info cards */
+article.info_card>p {
+    margin-left: 1rem;
+}
+
+
+/* Styling to set left margin of h3 on info cards */
+article.info_card>h3 {
+    margin-left: 1rem;
+}
+
+
+
+/* ---------------------- CARD STYLES ------------------------ */
+
+/* Style of the image gallery cards themselves */
+.image_gallery_card {
+    display: inline-block;
+    width: 22%; /* multiple cards on a row default for desktop */
+    padding: 1rem;
+}
+
+
+/* Style the images in the image gallery cards */
+.image_gallery_card img {
+    width: 100%;
+}
+
+
+/* Style of paragraph of text on the shop cards */
+.price_p {
+    margin: 0 auto;
+    text-align: center; /* price text should be centered */
+}
+
+
+
+/* --------------------- FOOTER STYLES ----------------------- */
+
+/* Style of the footer, with an off-white background */
+footer {
+    background-color: #f8f4f1;
+}
+
+/* Style of paragraphs of text in the footer */
+footer p {
+    color: #464b46;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Style the footer hyperlinks to be a different color than 
+typical hyperlink text, so it stands out from standard hyperlinks */
+footer a {
+    color: #5f2e21;
+}
+
+
+
+/* ------------------------- TABLET MEDIA QUERIES ---------------------------- */
+
+/* *************************************************************************** */
+/* These are for media queries for screens between 641 pixels and 1024 pixels. */
+/* *************************************************************************** */
+
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+
+    /* ----------------------- NAV BAR FOR TABLET -------------------------- */
+
+    /* Make navigation text smaller to account for smaller device size. 
+    The nav links are also treated with a chunky underline */
+    .nav_links {
+        font-size: .9rem; /* smaller font size */
+        text-decoration: underline; /* all links underlined */
+        text-decoration-thickness: 0.2rem; /* make underline chunky */
+    }
+
+
+
+    /* ----------------------- HEADINGS FOR TABLET -------------------------- */
+    
+    /* Resize h1 to be smaller and lighter in weight than desktop. */
+    h1 {
+      font-size: 2.2rem; /* smaller font size */
+      line-height: 2.4rem; /* reduction in line height to go with smaller font size */
+      font-weight:500; /* lighter weight for smaller screen size */
+    }
+
+
+    /* Resize h2 to be smaller (with modified line height) than desktop. */
+    h2 {
+        font-size: 1.5rem; /* smaller font size */
+        line-height: 1.7rem; /* reduction in line height to go with smaller font size */
+    }
+
+
+    /* Resize h3 to be smaller (with modified line height than desktop. */
+    h3 {
+        font-size: 1.3rem; /* smaller font size */
+        line-height: 1.4rem; /* reduction in line height to go with smaller font size */
+    }
+
+
+
+    /* ----------------------- PARAGRAPHS FOR TABLET -------------------------- */
+
+    /* Resize tablet p to be smaller than default desktop. */
+    p {
+        font-size:0.95rem;
+    }
+
+
+
+    /* ----------------------- LIST STYLE FOR TABLET -------------------------- */
+
+    /* On tablet, unordered lists are a wider width than desktop and 
+    they have smaller font size. */
+    ul {
+        width: 80%;
+        font-size:0.95rem;
+    }
+
+
+
+    /* ----------------------- LANDSCAPE PRINT CARD FOR TABLET -------------------------- */
+
+    /* Style the image gallery cards so that there are less cards on each row on tablet. */
+    .image_gallery_card {
+        width: 40%; /* percentage increased from 22% on desktop to 40% on tablet */
+    }
+
+
+    /* ----------------------- TABLE STYLES FOR TABLET -------------------------- */
+
+    /* Reduce font size and line height of td for tablet */
+    td {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+
+
+    /* The publication date in the table should be hidden on tablet */
+    .pub_date {
+        display: none;
+    }
+
+
+
+    /* ------------------------ IFRAME STYLES FOR TABLET -------------------------- */
+
+    /* iframe width should be 100% for tablet, rather than the 60% used on desktop */
+    iframe {
+        width: 100%;
+    }
+}
+
+
+
+/* ------------------ MOBILE MEDIA QUERIES ------------------ */
+
+/* ********************************************************** */
+/* These are media queries for screens of 640 pixels or less. */
+/* ********************************************************** */
+
+
+@media screen and (max-width: 640px) {
+
+    /* ----------------------- NAV BAR FOR MOBILE -------------------------- */
+
+    /* Make sure the logo doesn't float left on mobile and instead displays as a block level element. */
+    .logo_image {
+        float: none;
+        display: block;
+    }
+    
+
+    /* Make navigation text smaller, underlined, left aligned, 
+    and with nav links each block level for a stacked look. */
+    .nav_links {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: .85rem;
+        padding: 0.9rem 0rem 0rem 0rem;
+        margin-left: 1.5rem;
+        text-decoration: underline; /* all links underlined */
+        text-decoration-thickness: 0.2rem; /* make underline chunky */
+    }
+    
+
+
+    /* ----------------------- HEADINGS FOR MOBILE -------------------------- */
+
+    /* Resize h1 to be smaller, left-aligned, and lighter in weight than desktop. */
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        font-weight:500;
+        text-align: left;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+
+    /* Resize h2 to be smaller, left-aligned, and lighter in weight than desktop. */
+    h2 {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        text-align: left;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+
+    /* Resize h3 to be smaller, left-aligned, and lighter in weight
+    and with less letter spacing than desktop. */
+    h3 {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.1rem;
+        text-align: left;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+
+    /* Keep h3 for the image gallery cards centered when on mobile */
+    .image_gallery_card h3 {
+        text-align: center;
+    }
+
+
+
+    /* ----------------------- PARAGRAPHS FOR MOBILE -------------------------- */
+
+    /* Resize p to be left aligned and smaller than desktop. */
+    p, .single_column_section p {
+        font-size:0.9rem;
+        text-align: left;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        width: 80%;
+    }
+
+    /* Make sure the price paragraphs are still center aligned */
+    p.price_p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+
+    /* ----------------------- ASIDE STYLE FOR MOBILE -------------------------- */
+
+    /* On mobile, the aside should not float to the right and should be in 
+    its own column rather than side by side with other elements. */
+    aside {
+        float:none;
+        width: 80%;
+        margin: 0 auto; /* center aside */
+    }
+
+
+
+    /* ----------------------- LIST STYLE FOR MOBILE -------------------------- */
+
+    /* On mobile, unordered lists are a wider width with smaller text than desktop. */
+    ul {
+        width: 80%;
+        font-size:0.9rem;
+    }
+
+
+
+    /* ----------------------- LANDSCAPE PRINT CARD FOR MOBILE -------------------------- */
+
+
+    /* Style the image gallery cards so that there are less cards on each row on tablet. */
+    .image_gallery_card {
+        width: 80%;
+    }
+
+
+
+    /* ----------------------- CONVERT TWO COLUMN LAYOUT TO ONE COLUMN -------------------------- */
+
+    /* On mobile, the two column layout using Flexbox should stack and be one column instead. */
+    .flex_container {
+        display: block;
+    }
+
+
+    /* Style so that each column takes up the full width of the window instead of half. */
+    .flex_container .info_card {
+        width: 100%;
+    }
+
+
+
+    /* ----------------------- TABLE STYLES FOR MOBILE -------------------------- */
+
+    /* Reduce font size of th for mobile */
+    th {
+        font-size: 1rem;
+    }
+
+
+    /* Reduce font size and line height of td for mobile */
+    td {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+    /* The publication's location in the table should be hidden on mobile */
+    .pub_locale {
+        display: none;
+    }
+
+
+
+    /* ------------------------ IFRAME STYLES FOR MOBILE -------------------------- */
+
+    /* iframe width should be 100% for mobile, rather than the 60% used on desktop */
+    iframe {
+        width: 100%;
+    }
+}
+
