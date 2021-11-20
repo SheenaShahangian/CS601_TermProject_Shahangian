@@ -362,6 +362,12 @@ figcaption {
     width: 50%;
 }
 
+/* Style the travel info cards used for 4 column layouts */
+.four_col_info_card {
+    width: 22%;
+    margin: 1%;
+}
+
 
 /* Style for the image on each card */
 .card_image {
@@ -509,6 +515,23 @@ footer a {
     .image_gallery_card {
         width: 40%; /* percentage increased from 22% on desktop to 40% on tablet */
     }
+
+
+    /* ----------------------- CONVERT 4 COLUMN LAYOUT TO ONE COLUMN -------------------------- */
+
+
+    /* On tablet, the four column layout using Flexbox should stack and be one column instead. */
+    #travel_flex {
+        display: block;
+    }
+
+
+    /* Style so that each column takes most of the full width. */
+    .flex_container .four_col_info_card {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
 
 
     /* ----------------------- TABLE STYLES FOR TABLET -------------------------- */
@@ -674,6 +697,16 @@ footer a {
     /* Style so that each column takes up the full width of the window instead of half. */
     .flex_container .info_card {
         width: 100%;
+    }
+
+
+    /* ----------------------- CONVERT 4 COLUMN LAYOUT TO ONE COLUMN -------------------------- */
+
+
+    /* Style so that each column takes most of the full width. */
+    .flex_container .four_col_info_card {
+        width: 90%;
+        margin: 0 auto;
     }
 
 
