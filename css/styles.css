@@ -196,7 +196,7 @@ a {
 
 /* Style when a hyperlink (non-navigation links) is hovered over */
 a:hover {
-    text-decoration: underline; /* underline when hovevered over */
+    text-decoration: underline; /* underline when hovered over */
     text-decoration-thickness: 0.2rem; /* make underline chunky */
 }
 
@@ -221,6 +221,7 @@ button {
 button:hover {
     color: #ffffff;
     background-color: #f17f6a; /* fills in the background */
+    cursor: pointer; /* finger pointer shows up when buttons are hovered over */
 }
 
 
