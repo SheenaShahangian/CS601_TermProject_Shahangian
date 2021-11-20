@@ -51,6 +51,12 @@ nav {
     text-decoration-thickness: 0.2rem; /* chunky underline */
 }
 
+/* Style active navigation link */
+#nav_active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem; /* chunky underline */
+}
+
 
 
 /* --------------------- HEADING STYLES ----------------------- */
