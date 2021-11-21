@@ -200,6 +200,51 @@
         </section>
 
 
+        <!-- this section introduces a quiz to help the user decide which of the above locations they should travel to -->
+        <section class="single_column_section">
+
+            <!-- heading introducing this section -->
+            <h2>Curious Where You Should Travel To Next?</h2>
+            <p>
+                I've created a little quiz to help you figure out! Of my four favorite places I mentioned above, 
+                which one should you visit? All you have to do is answer the questions below, and I'll tell you. 
+                Great ready to pack those bags!
+            </p>
+
+            <!-- the actual form the user can fill out to get their results -->
+            <form>
+                <!-- first question -->
+                <label for = "desertOrMountain">Which landscape do you prefer: desert or mountains?</label>
+                <select name = "desertOrMountain" id = "desertOrMountain" value= "mountains">
+                    <option value = "desert">desert</option>
+                    <option value = "mountains">mountains</option>
+                </select>
+
+                <!-- second question -->
+                <label for = "humidOrArid">Which climate do you prefer: humid or arid?</label>
+                <select name = "humidOrArid" id = "humidOrArid" value= "arid">
+                    <option value = "humid">humid</option>
+                    <option value = "arid">arid</option>
+                </select>
+
+                <!-- third question -->
+                <label for = "nearTownOrNo">Would you like to be near a town: yes or no?</label>
+                <select name = "nearTownOrNo" id = "nearTownOrNo" value= "yes">
+                    <option value = "yes">yes</option>
+                    <option value = "no">no</option>
+                </select>
+
+                <!-- button that calculates results -->
+                <button type="button" class="info_card_button" onclick="findTravelLocation()">Find My Location</button>
+
+            </form>
+
+            <!-- this section will hold the user's quiz results-->
+            <section class="single_column_section" id="quizResult"></section>
+
+        </section>
+
+
     </main>
 
     <!-- website footer -->
@@ -210,5 +255,6 @@
         <p><a href="mailto:sheenas@bu.edu">Email Sheena</a></p>
     </footer>
     
+    <script src="js/app.js"></script>
 </body>
 </html>
