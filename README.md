@@ -49,6 +49,10 @@ The repository is public, however should you have any trouble accessing it, plea
 
 
 
+### Accessibility
+
+In order to make the website accessible, I have ensured that all images and appropriate and descriptive alt text. In addition to that, all form controls used on the site have labels included with them.
+
 ### Incorporation of Other Additional Elements - How I Went Above and Beyond
 
 I've attempted to add some new features beyond the standard requirements listed in the rubric. These include: 

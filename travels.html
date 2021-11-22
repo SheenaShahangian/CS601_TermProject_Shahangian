@@ -212,35 +212,38 @@
             </p>
 
             <!-- the actual form the user can fill out to get their results -->
-            <form>
+            <form id="travel_quiz">
                 <!-- first question -->
                 <label for = "desertOrMountain">Which landscape do you prefer: desert or mountains?</label>
-                <select name = "desertOrMountain" id = "desertOrMountain" value= "mountains">
+                <select name = "desertOrMountain" id = "desertOrMountain">
                     <option value = "desert">desert</option>
                     <option value = "mountains">mountains</option>
                 </select>
 
+                <br>
+
                 <!-- second question -->
                 <label for = "humidOrArid">Which climate do you prefer: humid or arid?</label>
-                <select name = "humidOrArid" id = "humidOrArid" value= "arid">
+                <select name = "humidOrArid" id = "humidOrArid">
                     <option value = "humid">humid</option>
                     <option value = "arid">arid</option>
                 </select>
 
+                <br>
+
                 <!-- third question -->
                 <label for = "nearTownOrNo">Would you like to be near a town: yes or no?</label>
-                <select name = "nearTownOrNo" id = "nearTownOrNo" value= "yes">
+                <select name = "nearTownOrNo" id = "nearTownOrNo">
                     <option value = "yes">yes</option>
                     <option value = "no">no</option>
                 </select>
+
+                <br>
 
                 <!-- button that calculates results -->
                 <button type="button" class="info_card_button" onclick="findTravelLocation()">Find My Location</button>
 
             </form>
-
-            <!-- this section will hold the user's quiz results-->
-            <section class="single_column_section" id="quizResult"></section>
 
         </section>
 
