@@ -1,6 +1,6 @@
 # Read Me - MET CS 601 Sheena Shahangian
 
-This iteration of my website contains the HTML for 8 pages all styled using CSS. The homepage is the filename "index.html". I have placed the stylesheet in the css directory, and all photos within the "multimedia" directory. JavaScript can be found in the js directory. Please see below for a description of where I have included the requested elements (and where I have provided extras).
+This iteration of my website contains the HTML for 7 pages all styled using CSS. The homepage is the filename "index.html". I have placed the stylesheet in the css directory, and all photos within the "multimedia" directory. JavaScript can be found in the js directory. Please see below for a description of where I have included the requested elements (and where I have provided extras).
 
 The website has been tested in Google Chrome, Firefox, and Safari. It has also been tested for responsiveness.
 
@@ -15,15 +15,9 @@ The repository is public, however should you have any trouble accessing it, plea
 
 ## A Couple Notes Before We Begin
 
-* 
+* All pages are styled using the same single external stylesheet. As it is quite long, I have used comments to organize the code. Media styles for tablet screen sizes and mobile screen sizes are located at the bottom of the stylesheet for easy reference.
 
 ## Requested Elements
-
-1. Per the assignment instructions, all pages are styled using the same single external stylesheet. As it is quite long, I have used comments to organize the code. Media styles for tablet screen sizes and mobile screen sizes are located at the bottom of the stylesheet for easy reference.
-
-2. Each element has at least one property value pair (and most of them have a lot more than just one, given I was aiming to create a professional design).
-
-3. In regards to creativity, I have attempted to treat this as a professional website, with clean branding, good amounts of whitespace, consistent brand palette/color usage, and the like.
 
 4. There are well more than the three required distinct differences in how the pages are presented based on screen size. Per the professor's recommendation, the branding and colors remain consistent, no matter the screen size. This is to ensure that the viewer doesn't get confused about which site they are on; it's best practice for the branding to stay the same. Where I have incorporated changes is in doing things like modifying the navigation bar for mobile, changing font size depending on screen size, hiding elements on smaller screens for a more streamlined view, changing text alignment on smaller screens to make reading easier, etc. I go into full detail on how media queries were used to accomplish this below. Before we begin, these are the screen sizes and names I'll be referring to in this report:
 
@@ -49,38 +43,72 @@ The repository is public, however should you have any trouble accessing it, plea
 
 
 
-### Accessibility
+### Design and Layout
 
-In order to make the website accessible, I have ensured that all images and appropriate and descriptive alt text. In addition to that, all form controls used on the site have labels included with them.
+* The layout and design of the site are intended to take a colorful, yet minimalist approach. I did not want to overload the site with information and design elements that would detract from the content. Yet, I still wanted to ensure there was a cohesive brand associated with this site.
+* I custom created my own site logo and intentionally narrowed down on a refined color palette to use througout the site.
+* All pages on the website clearly belong to the same site, an the design and layout are consistent. I have intentionally used class selectors in my css to allow the reuse of designs on various pages. This further enhances the consistency in design and layout on the page.
+* As I speak to in greater detail in the CSS section, the site is responsive to three different screen sizes.
 
-### Incorporation of Other Additional Elements - How I Went Above and Beyond
+### Text
+
+* I have opted to use typefaces that are clean and legible. All typefaces used are san serif, as those are most legible when read on the screen (as indicated in our textbook).
+* I have chosen to only use 2 typefaces, per standard graphic design recommendation to not have too many typefaces in a single design. However, to ensure variety, I have leveraged various weights of the two typefaces.
+* All content has been proof-read for quality, presentation, and errors.
+
+### Navigation
+
+* All pages on the website can be accessed via the main navigation bar.
+* The main navigation bar is crafted with a clean and uncluttered design to make traveling through the site easy.
+* As the screen size narrows, I have ensured that line height is abundant enough so that links don't stack on top of each other or feel to close. I intentionally left plenty of breathing room.
+
+### High Quality Imagery
+
+* All images in the HTML have alt text attributed to them.
+* Images have dimensions included where appropriate, however as requested, I would like to mention that explicit width and height are not always incorporated, as I have certain images that I wanted to take up a certain percentage of their containers (e.g., hero images that take up 100% container width). For these, including explicit width and height would not have been appropriate and would have negatively impacted an intentional design choice.
+* All images were intentionally chosen to match the aesthetic of the website, and they have all been run through an image optimizer before being added to the multimedia folder. This image optimizer does not impact quality of images, but reduces the file size to make the site load faster.
+
+### Mechanics
+
+The site has been thoroughly tested to make sure there are no missing graphics or broken links. Tests have been conducted in the following browsers: Chrome, Firefox, and Safari.
+
+### HTML Mastery
+
+* I have applied meaningful id and class names in the HTML to make the css more understandable.
+* Comments are used throughout my HTML to ensure readability and for making future modifications easier. The markup is more navigable due to the comments.
+* I have incorporated sematic HTML throughout the website, and have avoided using divs unless they genuinely were the most appropriate elements to use.
+
+### CSS Mastery
+
+* Each element has at least one property value pair (and most of them have a lot more than just one, given I was aiming to create a professional design).
+* In regards to creativity, I have attempted to treat this as a professional website, with clean branding, good amounts of whitespace, consistent brand palette/color usage, and the like.
+* I have used media queries to ensure responsiveness for different screen sizes.
+* I have used a variety of selectors, including class selectors, element/type selectors, id selectors, and descendant selectors. As much as possible, I have aimed to focus on element/type and class selectors to ensure greater reusability on the code.
+* I have used Google Fonts rather than system fonts to give my website an elevated and customized look. However, I have also specified fallback fonts as well, in case my website visitors' devices cannot render the Google Fonts.
+* I have intentionally chosen colors that are easily legible on various colors and surfaces on the website, so that nothing is difficult to read.
+* I have intentionally limited my font families to two distinct primary fonts (both Google Fonts) in order to keep with design best practices of not having too many fonts on a single page.
+* I have chosen and used a color palette that I have based my styles on to ensure consistency in branding. You will see those colors across the board on the website.
+* I have included more than one property:value pair on nearly every selector I've used to make sure I fine-tuned my design. Specifically, all fonts are changed, colors are added, layout is modified, the pages are responsive, padding is modified, margins are modified, line height and letter spacings are modified, etc. I won't make a comprehensive list here, as it'd be quite long, but these are some of the changes that have been made.
+* I have organized my css document with in-depth comments to ensure the design choices are clear and easy to find (which will make this website easier to modify in the future, when needed). I have also used comments to break up my stylesheet into sections that make it more digestible. This will make it easier to modify the css in the future.
+* Per the professor's recommendations, I have placed all media queries at the bottom of the stylesheet for easy identification.
+* Per the professor's recommendations, I have tried to use rems and percentages as much as possible, and have used pixels as little as possible.
+* I have incorporated several more than the three required distinct differences based on screen size, as I wanted each device size to really be comprehensive and beautiful on its own (see media queries explanation in the section above for details). Specifically, I have used media queries on 17 different elements on screens with a max width of 640 pixels, and I have used media queries on 10 different elements on screens with a min width of 641 pixels and a max width of 1024 pixels. Generally speaking, the 641 - 1024 pixel screens have more real estate and thus incorporate a lot of the same structure and design as larger screens, which is why they have less elements leveraging media queries. On the other end of the spectrum, smaller screen sizes require much resizing and redesigning.
+* I do want to acknowledge that I have incorporated divs, but I have only done this when absolutely necessary and when a semantic element wouldn't work and would produce a warning from the validator.
+
+### JavaScript Mastery
+
+### Vue Mastery
+
+### DOM Mastery
+
+### Validation/Accessibility
+
+* In order to make the website accessible, I have ensured that all images and appropriate and descriptive alt text. In addition to that, all form controls used on the site have labels included with them.
+
+### Extra Credit - How I Went Above and Beyond
 
 I've attempted to add some new features beyond the standard requirements listed in the rubric. These include: 
 
-* I have used Google Fonts rather than system fonts to give my website an elevated and customized look. However, I have also specified fallback fonts as well, in case my website visitors' devices cannot render the Google Fonts.
-
-* I have used a variety of selectors, including class selectors, element/type selectors, id selectors, and descendant selectors. As much as possible, I have aimed to focus on element/type and class selectors to ensure greater reusability on the code.
-
-* I have intentionally chosen colors that are easily legible on various colors and surfaces on the website, so that nothing is difficult to read.
-
-* I have included more than one property:value pair on nearly every selector I've used to make sure I fine-tuned my design. Furthermore, I have styled the page in such a way that this new version looks nothing like the HTML version of the website from last week. Specifically, all fonts are changed, colors are added, layout is modified, the pages are responsive, padding is modified, margins are modified, line height and letter spacings are modified, etc. I won't make a comprehensive list here, as it'd be quite long, but these are some of the changes that have been made.
-
-* I have organized my css document with in-depth comments to ensure the design choices are clear and easy to find (which will make this website easier to modify in the future, when needed). I have also used comments to break up my stylesheet into sections that make it more digestible. This will make it easier to modify the css in the future.
-
-* Per the professor's recommendations, I have placed all media queries at the bottom of the stylesheet for easy identification.
-
-* I have incorporated several more than the three required distinct differences based on screen size, as I wanted each device size to really be comprehensive and beautiful on its own (see media queries explanation in the section above for details). Specifically, I have used media queries on 17 different elements on screens with a max width of 640 pixels, and I have used media queries on 10 different elements on screens with a min width of 641 pixels and a max width of 1024 pixels. Generally speaking, the 641 - 1024 pixel screens have more real estate and thus incorporate a lot of the same structure and design as larger screens, which is why they have less elements leveraging media queries. On the other end of the spectrum, smaller screen sizes require much resizing and redesigning.
-
-* I have chosen and used a color palette that I have based my styles on to ensure consistency in branding. You will see those colors across the board on the website.
-
-* I have intentionally limited my font families to two distinct primary fonts (both Google Fonts) in order to keep with design best practices of not having too many fonts on a single page.
-
-* Per the professor's encouragement to look into newer tools like Flexbox, I have incorporated Flexbox for some of my two column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in).
-
-* Per the professor's recommendations, I have tried to use rems and percentages as much as possible, and have used pixels as little as possible.
-
-* I have applied meaningful id and class names in the HTML to make the css more understandable.
-
-* I do want to acknowledge that I have incorporated divs, but I have only done this when absolutely necessary and when a semantic element wouldn't work and would produce a warning from the validator.
+* I have incorporated Flexbox for some of my multi-column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in).
 
   
