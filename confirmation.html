@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the contact form confirmation page">
+    <title>You Submitted Successfully</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- Use of Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;500;700;900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900">
+</head>
+<body>
+
+    <!-- website header with logo and navigation -->
+    <header class="page_top_navigation" id="bio_top">
+
+        <!-- main navigation bar for the website -->
+        <nav>
+            <!-- website logo that navigates back to the home page when clicked -->
+            <a href="index.html"><img src="multimedia/sheena-shahangian-logo.png" 
+                alt="logo for Sheena's portfolio site" class="logo_image"></a>
+
+            <!-- non-homepage/non-logo navigation links -->
+            <a class="nav_links" href="biography.html">Biography</a>
+            <a class="nav_links" href="elopements.html">Elopements</a>
+            <a class="nav_links" href="travels.html">Travels</a>
+            <a class="nav_links" href="shop.html">Shop</a>
+            <a class="nav_links" href="articles.html">Articles</a>
+            <a class="nav_links" id="nav_active" href="contact.html">Contact</a> <!-- this link is active! -->
+        </nav>
+
+    </header>
+
+    <!-- main contents of the confirmation page -->
+    <main>
+
+        <section class="single_column_section">
+            <!-- presents a confirmation message to the user -->
+            <h1>Thanks for Reaching Out</h1>
+
+            <p>
+                I have received your inquiry and will be getting back to you within the next 
+                24 hours. Should you have any urgent questions for me in the meantime, please 
+                reach out to me at sheenas@bu.edu. Thank you!
+            </p>
+
+        </section>
+
+
+        <section class="single_column_section">
+
+            <!-- gives the user options on where to go next -->
+            <h2>Where to Next?</h2>
+            <p>
+                While you wait for a response, perhaps you'd be interested in learning more about 
+                my favorite travels. Or maybe you'd be interested in reading some of my recently 
+                published articles? Adventure awaits.
+            </p>
+
+            <!-- two column display -->
+            <div class="flex_container">
+
+                <!-- card that will navigate you to the travel page -->
+                <article class="info_card">
+
+                    <img src="multimedia/Moab-travels.jpg" alt="Sheena with her husband and dogs in Moab" 
+                    class="card_image">
+
+                    <h3>Peruse the Travels Page</h3>
+
+                    <!-- introductory content hinting at what you will find on the travel page -->
+                    <p class="info_card_paragraph">
+                        Interested in reading more about my favorite travel destinations and why I love them so much?
+                        You'll love my travels page. Who knows, you may just get inspired for your next adventure.
+                    </p>
+
+                    <!-- button that goes to the travels page -->
+                    <button type="button" class="info_card_button" onclick="window.location.href='travels.html';">View My Travels</button>
+
+                </article>
+
+            
+                <!-- card that will navigate you to the articles page -->
+                <article class="info_card">
+
+                    <img src="multimedia/Telluride-elopement.jpg" alt="couple eloping in the mountains of Telluride" 
+                    class="card_image">
+
+                    <h3>Read My Recent Articles</h3>
+
+                    <!-- introductory content hinting at what you will find on the articles page -->
+                    <p class="info_card_paragraph">
+                        While I primarily work as a photographer, I am also a freelance/contract writer who frequently 
+                        writes for a major wedding blog. My writing has also been published in a few other major publications.
+                    </p>
+
+                    <!-- button that goes to the articles page -->
+                    <button type="button" class="info_card_button" onclick="window.location.href='articles.html';">View My Articles</button>
+
+                </article>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- website footer -->
+    <footer>
+        <!-- image copyright credit -->
+        <p>All images &copy; <a href="https://sheenashahangian.com" target="_blank">Sheena Shahangian Photography LLC</a></p>
+        <!-- email link to contact Sheena -->
+        <p><a href="mailto:sheenas@bu.edu">Email Sheena</a></p>
+    </footer>

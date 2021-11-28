@@ -36,6 +36,95 @@
     <!-- main contents of the contact page -->
     <main>
 
+        <section class="single_column_section">
+            <!-- welcomes the user to the contact form -->
+            <h1>I Can't Wait to Hear From You</h1>
+
+            <!-- explanation of what to fill out/why to contact me -->
+            <p>
+                Let's get your next project started. Looking for a photographer to bring your brand's vision 
+                to life? I love working with small businesses. Need a custom landscape print album designed? 
+                I'm your girl. Interested in collaborating on a creative project? All you have to do is fill 
+                out the contact form below with all the details, and I'll email you back ASAP.
+            </p>
+
+        </section>
+
+        <!-- the contact form -->
+        <form id="contact_form" name="sheena_contact_form" action="confirmation.html" method="post">
+                
+            <!-- text inputs -->
+
+            <!-- first name -->
+            <div class="form_div">
+                <label for="firstName">First Name (required):</label>
+                <input type="text" name="firstName" id="firstName" required>
+
+                <!-- span for error message -->
+                <span id="first_name_error_msg" class="feedback">Invalid Input</span>
+            </div>
+            
+
+            <!-- last name -->
+            <div class="form_div">
+                <label for="lastName">Last Name (required):</label>
+                <input type="text" name="lastName" id="lastName" required>
+
+                <!-- span for error message -->
+                <span id="last_name_error_msg" class="feedback">Invalid Input</span>
+            </div>
+
+
+
+            <!-- email address -->
+            <div class="form_div">
+                <label for="email">Email Address (required):</label>
+                <input type="email" name="email" id="email" required>
+
+                <!-- span for error message -->
+                <span id="email_error_msg" class="feedback">Invalid Input</span>
+            </div>
+
+
+
+            <!-- phone number -->
+            <div class="form_div">
+                <label for="phone">Phone Number (required):</label>
+                <input type="tel" name="phone" id="phone" required>
+
+                <!-- span for error message -->
+                <span id="phone_error_msg" class="feedback">Invalid Input</span>
+            </div>
+
+            
+
+            <!-- radio button group to ask preferred way of contact -->
+            <div class="form_div">
+                <p class="form_p">How would you like me to reach out?</p>
+                <label for="call">Call Me</label>
+                <input type="radio" id="call" name="contact_method" value="call">
+
+                <br>
+
+                <label for="e_mail">Email Me</label>
+                <input type="radio" id="e_mail" name="contact_method" value="e_mail">
+
+            </div>
+
+
+            <!-- text area that contains the user's request -->
+            <div class="form_div">
+                <label for="message_box">Tell me more about your project/needs: </label>
+                <textarea id="message_box" name="message_box" placeholder="Give me all the details about why you're reaching out."></textarea>
+            </div>
+
+            <!-- form submit button -->
+            <div class="form_div">
+                <input type="submit" name="submitButton" value="Get in Touch">
+            </div>
+
+        </form>
+
     </main>
 
     <!-- website footer -->
@@ -45,6 +134,8 @@
         <!-- email link to contact Sheena -->
         <p><a href="mailto:sheenas@bu.edu">Email Sheena</a></p>
     </footer>
+
+    <script src="js/app.js"></script>
     
 </body>
 </html>

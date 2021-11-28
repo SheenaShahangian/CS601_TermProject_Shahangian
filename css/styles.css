@@ -420,6 +420,132 @@ article.info_card>h3 {
 
 
 
+/* --------------------- FORM STYLES ----------------------- */
+
+/* Style of the form, which should be centered. */
+form {
+    margin: 0 auto;
+}
+
+
+/* Style of the form divs */
+.form_div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Style of paragraphs within the form */
+.form_p {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* Style the labels */
+label {
+    color: #444444;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 500; 
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    line-height: 1.2rem; /* breathing room between lines */
+    margin-top: 1rem;
+}
+
+/* Style the inputs */
+input, textarea, select {
+    color: #464b46;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300; 
+    font-size: 0.9rem;
+    line-height: 1.2rem; /* breathing room between lines */
+    margin-top: 1rem;
+
+}
+
+
+/* Style for labels */
+label {
+    display: inline-block;
+}
+
+
+/* Make inputs block level and give them a simple underline border and background color */
+input {
+    background-color: #f8f4f1;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* Style the text, email, and telephone inputs */
+input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    height: 2rem; /* make input boxes taller */
+}
+
+
+/* Style the textarea to be full container width and same styling as inputs */
+textarea {
+    width: 100%;
+    height: 10rem;
+    background-color: #f8f4f1;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* Style the form's submit button */
+input[type=submit] {
+    color:#ffffff;
+    background-color: #f17f6a;
+    border-color: #ffffff;
+    border-style: solid;
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    cursor: pointer; /* finger pointer shows up when buttons are hovered over */
+}
+
+
+/* Style the feedback spans */
+.feedback, .pos_feedback, .neg_feedback {
+    display: block;
+    visibility: hidden; /* defaults to hidden */
+    font-family: "Barlow", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+
+/* Style the positive feedback spans */
+.pos_feedback {
+    visibility: visible; /* un-hide feedback */
+    color: #32a532;
+}
+
+
+/* Style the negative feedback spans */
+.neg_feedback {
+    visibility: visible; /* un-hide feedback */
+    color: #d41d1d;
+}
+
+
+
+
 /* --------------------- FOOTER STYLES ----------------------- */
 
 /* Style of the footer, with an off-white background */
@@ -738,5 +864,14 @@ footer a {
     iframe {
         width: 100%;
     }
+
+
+
+    /* ------------------------ FORM STYLES FOR MOBILE -------------------------- */
+    /* Style of the form divs, which should take up more container width on mobile. */
+    .form_div {
+        margin: 1.4rem auto;
+        width: 80%;
+}
 }
 
