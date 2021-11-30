@@ -58,6 +58,36 @@ nav {
 }
 
 
+/* --------------------- BANNER STYLES ------------------------ */
+
+/* Styling for page banner with background image */
+.page_banner {
+    background-image: url("../multimedia/aspen-elopement-before-sunrise.jpg"); /* default background image for banner */
+    background-repeat: no-repeat; /* I don't want the image to repeat */
+    background-attachment: fixed; /* used to create dynamic look */
+    background-position: 50% 60%; /* image positioning */
+    padding: 13rem 0rem; /* to breathing room around the text */
+    margin:0rem auto; /* ensures no white space on sides */
+    margin-bottom: 3rem; /* reintroduce breathing room on bottom */
+}
+
+/* Styling for h1 and p in the banner. */
+.page_banner h1, .page_banner p {
+    text-align: left;
+    margin-left: 5rem;
+    width: 50%;
+    color: #f8f4f1;
+}
+
+
+/* Change background image for the home page banner from the default */
+#home_banner {
+    background-image: url("../multimedia/homepage-hero-image.jpg");
+    background-position: 30% 60%;
+
+}
+
+
 
 /* --------------------- HEADING STYLES ----------------------- */
 
@@ -113,11 +143,6 @@ h3 {
 }
 
 
-/* Style the h3 with id color_block to be off-white, as it's on a darker background. */
-#color_block h3 {
-    color: #f7f1f1;
-}
-
 
 
 /* --------------------- PARAGRAPH STYLES ----------------------- */
@@ -140,11 +165,6 @@ p {
     margin: 2rem;
 }
 
-
-/* Style the p with id color_block to be off-white, as it's on a darker background. */
-#color_block p {
-    color: #f7f1f1;
-}
 
 
 /* Styling for blockquote paragraphs */
@@ -388,7 +408,7 @@ figcaption {
 
 /* Style the blurb multi column layout to have different colors than the rest of the page */
 #color_block {
-    background-color: #464b46;
+    background-color: #f8f4f1;
     padding-top: 3rem;
     margin-bottom: 2rem;
 }
@@ -401,6 +421,10 @@ figcaption {
     background-size: cover;
 }
 
+/* Style the images on the home page 4 col section to have rounded edges */
+#blurb_flex .card_image {
+    border-radius: 4%;
+}
 
 /* Left align the h3 and paragraphs on the info cards */
 article.info_card>h3, article.info_card>p {
@@ -614,6 +638,28 @@ footer a {
     }
 
 
+    /* --------------------- BANNER STYLES FOR TABLET ------------------------ */
+
+    /* Styling for page banner on tablet, with background image, which needs 
+    adjusted positioning */
+    .page_banner {
+        background-position: 70% 60%; /* image positioning */
+    }
+
+    /* Styling for h1 and p in the banner, which needs adjusted margin and width 
+    for tablet. */
+    .page_banner h1, .page_banner p {
+        margin-left: 2rem;
+        width: 70%;
+    }
+
+    /* Styling for home page banner on tablet, with background image, which needs 
+    adjusted positioning */
+    #home_banner {
+        background-position: 30% 60%; /* image positioning */
+    }
+
+
 
     /* ----------------------- HEADINGS FOR TABLET -------------------------- */
     
@@ -746,6 +792,29 @@ footer a {
         text-decoration: underline; /* all links underlined */
         text-decoration-thickness: 0.2rem; /* make underline chunky */
     }
+
+
+    /* --------------------- BANNER STYLES FOR MOBILE ------------------------ */
+
+    /* Styling for page banner on mobile, with background image, which needs 
+    adjusted positioning */
+    .page_banner {
+        background-position: 70% 50%; /* image positioning */
+    }
+
+    /* Styling for h1 and p in the banner, which needs adjusted margin and width 
+    for mobile. */
+    .page_banner h1, .page_banner p {
+        margin-left: 1rem;
+        width: 80%;
+    }
+
+    /* Styling for home page banner on mobile, with background image, which needs 
+    adjusted positioning */
+    #home_banner {
+        background-position: 35% 25%; /* image positioning */
+    }
+
     
 
 
