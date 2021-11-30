@@ -113,6 +113,12 @@ h3 {
 }
 
 
+/* Style the h3 with id color_block to be off-white, as it's on a darker background. */
+#color_block h3 {
+    color: #f7f1f1;
+}
+
+
 
 /* --------------------- PARAGRAPH STYLES ----------------------- */
 
@@ -132,6 +138,12 @@ p {
     text-align: left;
     padding: 1rem;
     margin: 2rem;
+}
+
+
+/* Style the p with id color_block to be off-white, as it's on a darker background. */
+#color_block p {
+    color: #f7f1f1;
 }
 
 
@@ -301,6 +313,11 @@ tr.odd {
     margin-bottom: 1rem;
 }
 
+/* For the home page hero, image, remove margin on the bottom. */
+#home_page_hero_image {
+    margin-bottom: 0;;
+}
+
 
 /* Style of the iframes used to display videos */
 iframe {
@@ -349,7 +366,7 @@ figcaption {
 }
 
 
-/* Using flexbox to create two column layout */
+/* Using flexbox to create multi column layout */
 .flex_container {
     display: flex;
     justify-content: center; /* center the content */
@@ -366,6 +383,14 @@ figcaption {
 .four_col_info_card {
     width: 22%;
     margin: 1%;
+}
+
+
+/* Style the blurb multi column layout to have different colors than the rest of the page */
+#color_block {
+    background-color: #464b46;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -523,7 +548,7 @@ input[type=submit] {
 .feedback, .pos_feedback, .neg_feedback {
     display: block;
     visibility: hidden; /* defaults to hidden */
-    font-family: "Barlow", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-family: Poppins, Helvetica, Arial, "san serif"; /* fallback fonts set */
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.2rem;
@@ -648,6 +673,11 @@ footer a {
 
     /* On tablet, the four column layout using Flexbox should stack and be one column instead. */
     #travel_flex {
+        display: block;
+    }
+
+    /* On tablet, the four column layout using Flexbox should stack and be one column instead. */
+    #blurb_flex {
         display: block;
     }
 
