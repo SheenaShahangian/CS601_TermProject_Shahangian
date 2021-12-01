@@ -148,6 +148,16 @@ h3 {
 }
 
 
+/* Style of dropdown menu headings */
+.question_heading {
+    color: #5a665f;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+
 
 
 /* --------------------- PARAGRAPH STYLES ----------------------- */
@@ -281,6 +291,22 @@ ul {
     line-height: 1.7rem;
     margin: auto;
     width: 50%;
+}
+
+
+/* --------------------- DROPDOWN CONTENT STYLES ----------------------- */
+
+.question_and_answer {
+    border-bottom: 0.2rem solid;
+    border-color: #5a665f;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
 }
 
 
