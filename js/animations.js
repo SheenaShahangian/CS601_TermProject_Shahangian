@@ -14,21 +14,32 @@ let currentLetterIndex = 0;
 
 /* ------------------ LOGIC TO MAKE EACH LETTER A SPAN ------------------- */
 
-// start at index 0 (to be used in the for...of loop)
-let index = 0;
-// iterate over each letter and make each one into a span so we can animate
-for (letter of animatedHeadingContents) {
-    animatedHeading.innerHTML += "<span class='letter_span'>" + animatedHeadingContents[index] + "</span>";
-    index++; // increment index, as for...of loop doesn't keep tabs
+
+/* Function that wraps each letter in a string inside a span element, 
+so that we can animate each letter eventually */
+function eachLetterInSpan(textToConvert) {
+    // start at index 0 (to be used in the for...of loop)
+    let index = 0;
+    // iterate over each letter and make each one into a span so we can animate
+    for (letter of textToConvert) {
+        animatedHeading.innerHTML += `<span class='letter_span'>${textToConvert[index]}</span>`;
+        index++; // increment index, as for...of loop doesn't keep tabs
+    }
 }
+
 
 /* ------------------------------------------------------------------------ */
 
+// call the function that wraps each letter from the string passed in into a span
+eachLetterInSpan(animatedHeadingContents);
+
+
 // the time between animations will be 80 ms
-let animationIntervalTimer = setInterval(makeAnimation, 80);
+let animationIntervalTimer = setInterval(makeAnimation, 85);
 
 /* This function is actually responsible for making the animation */
 function makeAnimation() {
+    
     // we need to get all the letters (that are contained in the spans of class .letter_span)
     const letterSpans = animatedHeading.querySelectorAll(".letter_span")[currentLetterIndex];
 
