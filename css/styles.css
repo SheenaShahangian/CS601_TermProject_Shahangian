@@ -1,5 +1,4 @@
 
-
 /* --------------------- PAGE BODY STYLES ----------------------- */
 
 /* Style of the body of the page, which should be white and take up the browser window */
@@ -218,6 +217,25 @@ blockquote p {
     text-align: center;
     margin:0 auto; /* center blockquote text in its container */
     width: 50%; /* reduces possible text width for a chunkier look */
+}
+
+
+
+/* --------------------- CAROUSEL STYLES ------------------------ */
+
+/* Style slides with class .hidden_slide to not be displayed */
+.hidden_slide {
+    display: none;
+}
+
+/* Style the slides to hide overflow content, to avoid horizontal scrolling */
+.carousel_slide, .visible_slide {
+    overflow: hidden;
+}
+
+/* Style carousel images to be 75% container width */
+.carousel_slide img, .visible_slide img {
+    width: 75%;
 }
 
 
