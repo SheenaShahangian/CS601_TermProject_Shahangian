@@ -172,7 +172,7 @@ h3 {
 /* Style for span representing single letters in a letter animation */
 .letter_span {
     opacity: 0; /* start out as entirely transparent */
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
     transition: all 3s linear;
 }
 
