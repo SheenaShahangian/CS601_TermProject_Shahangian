@@ -95,6 +95,13 @@ nav {
 }
 
 
+/* Change background image for the travels page banner from the default */
+#travel_banner {
+    background-image: url("../multimedia/travel-hero-image.jpg");
+    margin-bottom: 0;
+}
+
+
 
 /* --------------------- HEADING STYLES ----------------------- */
 
@@ -740,6 +747,14 @@ footer a {
         background-position: 50% 50%; /* image positioning */
     }
 
+    /* Styling for travel page banner on tablet, with background image, which needs 
+    adjusted positioning */
+    #travel_banner {
+        background-position: 50% 50%; /* image positioning */
+    }
+
+
+
 
 
     /* ----------------------- HEADINGS FOR TABLET -------------------------- */
@@ -900,6 +915,12 @@ footer a {
     /* Styling for articles page banner on mobile, with background image, which needs 
     adjusted positioning */
     #articles_banner {
+        background-position: 50% 50%; /* image positioning */
+    }
+
+    /* Styling for travels page banner on mobile, with background image, which needs 
+    adjusted positioning */
+    #travel_banner {
         background-position: 50% 50%; /* image positioning */
     }
 
