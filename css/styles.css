@@ -255,7 +255,7 @@ blockquote {
 
 /* Styling for an aside */
 aside {
-    float: right; /* float to the righthand side */
+    float: right; /* float to the right hand side */
     width: 40%; /* only take up 40% of the container */
     padding-left: 0.8rem;
     padding-bottom: 0.8rem;
