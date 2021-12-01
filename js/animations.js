@@ -1,3 +1,5 @@
+/* ----------- GET THE CONTENTS OF THE ITEM WE NEED TO ANIMATE ------------ */
+
 // get the element that requires animation (of class .animated_heading)
 const animatedHeading = document.querySelector(".animated_heading");
 
@@ -32,12 +34,7 @@ function eachLetterInSpan(textToConvert) {
 
 /* ------------------------------------------------------------------------ */
 
-// call the function that wraps each letter from the string passed in into a span
-eachLetterInSpan(animatedHeadingContents);
 
-
-// the time between animations will be 80 ms
-let animationIntervalTimer = setInterval(makeAnimation, 85);
 
 /* This function is actually responsible for making the animation */
 function makeAnimation() {
@@ -45,9 +42,10 @@ function makeAnimation() {
     // we need to get all the letters (that are contained in the spans of class .letter_span)
     const letterSpans = animatedHeading.querySelectorAll(".letter_span")[currentLetterIndex];
 
-    // we need to change the styles, so add class of fade so those styles can be applied
+    // we need to change the styles, so add class of fade to the letter spans, 
+    // so those styles can be applied
     letterSpans.classList.add("fading_animation");
-    currentLetterIndex++;
+
 
     // we want to stop after going through all letters, so it's the length of the heading
     const stoppingPoint = animatedHeadingContents.length;
@@ -58,7 +56,20 @@ function makeAnimation() {
 
         // clears the timer we set up earlier
         clearInterval(animationIntervalTimer);
-        animationIntervalTimer = null;
         return;
     }
+
+    // otherwise increase the index
+    else {
+        currentLetterIndex++;
+    }
 }
+
+
+/* ------------------ CALLS TO START THE ANIMATIONS ------------------- */
+
+// call the function that wraps each letter from the string passed in into a span
+eachLetterInSpan(animatedHeadingContents);
+
+// the time between animations will be 80 ms
+let animationIntervalTimer = setInterval(makeAnimation, 85);
