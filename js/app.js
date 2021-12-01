@@ -79,6 +79,8 @@ function findTravelLocation() {
 // flag that indicates whether the question is clicked on, default to false
 let toggleFlag = false;
 
+/* This is a function that allows shows and hides and FAQ question's answer, 
+when the user clicks. */
 function toggleDropdownAccordion(question) {
 
     const answer = question.nextElementSibling;
@@ -96,7 +98,6 @@ function toggleDropdownAccordion(question) {
         toggleFlag = false;
     }
 }
-
 
 
 
