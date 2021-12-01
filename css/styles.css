@@ -1,3 +1,5 @@
+
+
 /* --------------------- PAGE BODY STYLES ----------------------- */
 
 /* Style of the body of the page, which should be white and take up the browser window */
@@ -155,6 +157,22 @@ h3 {
     font-weight: 500;
     line-height: 1.3rem;
     letter-spacing: 0.1rem;
+}
+
+
+
+/* --------------------- HEADING ANIMATION STYLES ----------------------- */
+
+/* Style for span representing single letters in a letter animation */
+.letter_span {
+    opacity: 0; /* start out as entirely transparent */
+    transition-delay: 0.5s;
+    transition: all 3s linear;
+}
+
+/* Style once text has faded in (which will be completely opaque) */
+span.fading_animation {
+    opacity: 1;
 }
 
 
