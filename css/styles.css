@@ -296,15 +296,41 @@ ul {
 
 /* --------------------- DROPDOWN CONTENT STYLES ----------------------- */
 
+/* Style of the article that contains the question heading, icon, and answer content */
 .question_and_answer {
     border-bottom: 0.2rem solid;
     border-color: #5a665f;
+    margin: 3rem auto;
+    width: 80%;
+    cursor: pointer;
 }
 
+
+/* Style of the question and icon */
+.question_and_icon {
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+/* Make question headings inline instead of block level */
+.question_heading {
+    display: inline;
+    margin: 0.7rem auto;
+}
+
+/* Style of the down arrow icon */
+.arrow_icon {
+    padding-top: 0.5rem;
+    width: 15px;
+    height: 15px;
+}
+
+/* Style for invisible question (aka when question hasn't been expanded). */
 .invisible {
     display: none;
 }
 
+/* Style for visible question (aka when question has been expanded). */
 .visible {
     visibility: visible;
 }
@@ -743,6 +769,7 @@ footer a {
 
 
 
+
     /* ----------------------- LANDSCAPE PRINT CARD FOR TABLET -------------------------- */
 
     /* Style the image gallery cards so that there are less cards on each row on tablet. */
@@ -940,6 +967,27 @@ footer a {
         width: 80%;
         font-size:0.9rem;
     }
+
+
+    /* ----------------------- DROPDOWN CONTENT STYLES FOR MOBILE -------------------------- */
+
+
+    /* Style of the question and icon on mobile */
+    .question_and_icon {
+        text-align: left;
+    }
+
+    /* Make question headings block on mobile */
+    .question_heading {
+        display: block;
+    }
+
+    /* Style of the down arrow icon on mobile, which is larger */
+    .arrow_icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 1rem;
+}
 
 
 
