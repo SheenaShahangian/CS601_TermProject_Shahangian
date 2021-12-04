@@ -44,7 +44,7 @@ function makeAnimation() {
 
     // we need to change the styles, so add class of fade to the letter spans, 
     // so those styles can be applied
-    letterSpans.classList.add("fading_animation");
+    letterSpans.className += " fading_animation";
 
 
     // we want to stop after going through all letters, so it's the length of the heading
