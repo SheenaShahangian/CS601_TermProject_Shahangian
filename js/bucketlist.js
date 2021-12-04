@@ -26,6 +26,7 @@ async function fetchBucketList() {
             let locationList = "";
 
             for (let index = 0; index <= 7; index++) {
+                console.log("in loop");
                 console.log(data.bucket_list_locations[index].location.name);
                 locationList += `<ul>${data.bucket_list_locations[index].location.name}</ul>`;
             }
