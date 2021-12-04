@@ -56,12 +56,8 @@ function makeAnimation() {
 
         // clears the timer we set up earlier
         clearInterval(animationIntervalTimer);
+        animationIntervalTimer = null;
         return;
-    }
-
-    // otherwise increase the index
-    else {
-        currentLetterIndex++;
     }
 }
 
