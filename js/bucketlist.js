@@ -2,7 +2,7 @@
 bucketListContainer = document.querySelector(".travel_list");
 
 // url for the JSON file
-let locationsUrl = "https://vigilant-allen-c8453f.netlify.app/bucketlist.json";
+let locationsUrl = "https://vigilant-allen-c8453f.netlify.app/js/bucketlist.json";
 
 async function fetchBucketList() {
     // fetch the data in the bucket list JSON file
