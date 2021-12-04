@@ -1,3 +1,6 @@
+/* This js file is responsible for creating a carousel of content that can 
+be cycled through */
+
 // get all the items in the carousel
 const carouselItems = document.querySelectorAll(".carousel_slide");
 

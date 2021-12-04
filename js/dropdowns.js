@@ -1,3 +1,7 @@
+/* This js file is responsible for animating the Q&A dropdowns that allow answers for certain 
+questions to be expanded and hidden. This helps the page feel more clean and less content-heavy, 
+while still containing important information. */
+
 /* ---------------------------------- LOGIC FOR Q&A DROPDOWN ---------------------------------- */
 
 // flag that indicates whether the question is clicked on, default to false

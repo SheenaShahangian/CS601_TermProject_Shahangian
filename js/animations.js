@@ -1,3 +1,6 @@
+/* This js file is responsible for adding animation to all h1 tags. The idea 
+is to see each letter (which will be held in a span) appear from left to right */
+
 /* ----------- GET THE CONTENTS OF THE ITEM WE NEED TO ANIMATE ------------ */
 
 // get the element that requires animation (of class .animated_heading)
@@ -49,7 +52,7 @@ function makeAnimation() {
 
     // we want to stop after going through all letters, so it's the length of the heading
     const stoppingPoint = animatedHeadingContents.length;
-    currentLetterIndex+=1;
+    currentLetterIndex+=1; // increase index so we can move to the next letter
 
     // stop once we get to the end of all the characters/letters in the heading,
     // then we want to stop

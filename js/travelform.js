@@ -1,3 +1,6 @@
+/* This js file is responsible for determining which location a user should travel to, 
+based on the form quiz at the bottom of the travel page. */
+
 /* ---------------------------------- LOGIC FOR TRAVEL FORM ---------------------------------- */
 
 /* This function is used to determine which location the user should travel to. */

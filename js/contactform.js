@@ -1,3 +1,7 @@
+/* This js file is responsible for making the contact form work and for validating 
+the user's inputs. It validates name inputs, but also validates emails and phone numbers. It 
+also writes error and success messages to the DOM */
+
 /* ---------------------------------- LOGIC FOR CONTACT FORM ---------------------------------- */
 
 // get the form

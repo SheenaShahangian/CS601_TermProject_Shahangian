@@ -1,3 +1,6 @@
+/* This js file is responsible for fetching bucket list locations from a JSON file and 
+putting that information in a list located in an aside on the travel page of the site */
+
 // get the travel bucket list container (which is a unordered list we need to populate)
 bucketListContainer = document.querySelector(".travel_list");
 
