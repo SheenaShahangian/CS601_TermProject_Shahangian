@@ -49,6 +49,7 @@ function makeAnimation() {
 
     // we want to stop after going through all letters, so it's the length of the heading
     const stoppingPoint = animatedHeadingContents.length;
+    currentLetterIndex+=1;
 
     // stop once we get to the end of all the characters/letters in the heading,
     // then we want to stop
@@ -56,7 +57,6 @@ function makeAnimation() {
 
         // clears the timer we set up earlier
         clearInterval(animationIntervalTimer);
-        //animationIntervalTimer = null;
         return;
     }
 }
