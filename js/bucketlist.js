@@ -25,17 +25,8 @@ async function fetchBucketList() {
             // this will hold the list contents
             let locationList = "";
 
-            // we need a starting index
-            let locationIndex = 0;
-
-            console.log("hello");
-            console.log(data.bucket_list_locations[0]);
-
-            // gather data from the file to display each location as an li
-            for (location of data) {
-                console.log(location);
-                locationList = locationList + `<ul>${location[locationIndex].location.name}</ul>`;
-                locationIndex++; // increment location index
+            for (let index = 0; index <= 7; index++) {
+                locationList += `<ul>${data.bucket_list_locations[index].location.name}</ul>`;
             }
 
             // write the list of bucket list locations to the page
