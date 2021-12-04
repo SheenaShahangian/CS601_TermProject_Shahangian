@@ -1,0 +1,39 @@
+{
+    "bucket_list_locations": [
+        {
+            "location": {
+                "name": "North Cascades"
+            }
+        },
+        {
+            "location": {
+                "name": "Big Bend"
+            }
+        },
+        {
+            "location": {
+                "name": "San Juan Mountains"
+            }
+        },
+        {
+            "location": {
+                "name": "Great Smoky Mountains"
+            }
+        },
+        {
+            "location": {
+                "name": "Acadia"
+            }
+        },
+        {
+            "location": {
+                "name": "Mount Rainier"
+            }
+        },
+        {
+            "location": {
+                "name": "Moab"
+            }
+        }
+    ]
+}
