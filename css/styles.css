@@ -214,6 +214,7 @@ blockquote p {
     font-weight: 700;
     line-height: 1.7rem;
     letter-spacing: 0.15rem;
+    word-spacing: 0.3rem;
     text-transform: uppercase;
     text-align: center;
     margin:0 auto; /* center blockquote text in its container */
