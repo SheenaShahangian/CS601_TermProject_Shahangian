@@ -40,7 +40,7 @@ function eachLetterInSpan(textToConvert) {
 function makeAnimation() {
 
     // we need to get all the letters (that are contained in the spans of class .letter_span)
-    let letterSpans = animatedHeading.querySelectorAll(".letter_span")[currentLetterIndex];
+    let letterSpans = animatedHeading[currentLetterIndex];
 
     // we need to change the styles, so add class of fade to the letter spans, 
     // so those styles can be applied
