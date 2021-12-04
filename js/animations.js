@@ -4,10 +4,10 @@
 const animatedHeading = document.querySelector(".animated_heading");
 
 // get the text of that element and split it to apply animations per letter
-const animatedHeadingContents = animatedHeading.textContent.split("");
+const animatedHeadingContents = animatedHeading.innerText.split("");
 
 // set the original text content to be nothing so we don't have a duplicate heading
-animatedHeading.textContent = "";
+animatedHeading.innerText = "";
 
 // get the current character/letter index
 let currentLetterIndex = 0;

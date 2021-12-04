@@ -30,6 +30,7 @@ async function fetchBucketList() {
 
             // gather data from the file to display each location as an li
             for (location of data) {
+                console.log(location);
                 locationList = locationList + `<ul>${location[locationIndex].location.name}</ul>`;
                 locationIndex++; // increment location index
             }
