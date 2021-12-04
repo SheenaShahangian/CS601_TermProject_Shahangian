@@ -28,6 +28,8 @@ async function fetchBucketList() {
             // we need a starting index
             let locationIndex = 0;
 
+            console.log("hello");
+
             // gather data from the file to display each location as an li
             for (location of data) {
                 console.log(location);
