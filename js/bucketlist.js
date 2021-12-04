@@ -29,7 +29,7 @@ async function fetchBucketList() {
             let locationIndex = 0;
 
             console.log("hello");
-            console.log(data.bucket_list_locations);
+            console.log(data.bucket_list_locations[0]);
 
             // gather data from the file to display each location as an li
             for (location of data) {
