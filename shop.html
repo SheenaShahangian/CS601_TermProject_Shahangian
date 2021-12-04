@@ -64,129 +64,115 @@
 
         <!-- this section contains all the prints that can be purchased. The prints are represented
         by "cards" that are within self-contained <article> tags -->
-        <section class="single_column_section">
+        <section class="single_column_section" id="shopapp">
 
-            <h2>The Prints</h2>
-            <p>
-                Below, you'll find a curated collection of my favorite landscape prints. Each of them can 
-                be purchased in a high quality walnut wood frame. These are heirloom quality prints that can 
-                be passed down from generation to generation. My intent is that these images inspire you to get 
-                out and explore the great outdoors yourself. Each of these places brought me an excitement and 
-                contentment that only nature can.
-            </p>
+            <h2>{{ printShopName }}</h2>
+            <p>{{ printShopIntro }}</p>
 
 
             <!-- a self-contained card that holds the name of the print, an image of the print, 
             the print price, and a button. The image is clickable and redirects to my external gallery 
             system which processes my payments and orders. -->
             <article class="image_gallery_card">
-                <h3>Half Dome</h3> <!-- print product name -->
+                <h3>{{ printOneName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2311cc7021a907c171e" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-Half-Dome.jpg" 
-                alt="Half Dome in the morning light"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printOneUrl" 
+                target="_blank"><img :src="printOneImageFilename" alt="Half Dome in the morning light"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2311cc7021a907c171e')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2311cc7021a907c171e')">Shop the Print</button>
             </article>
                     
     
             <!-- another self-contained card -->
             <article class="image_gallery_card">
-                <h3>Yosemite</h3> <!-- print product name -->
+                <h3>{{ printTwoName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef382f9a687ba0d800aa8ca" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-Yosemite.jpg" 
-                alt="sunrise in Yosemite"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printTwoUrl"  
+                target="_blank"><img :src="printTwoImageFilename" alt="sunrise in Yosemite"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef382f9a687ba0d800aa8ca')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef382f9a687ba0d800aa8ca')">Shop the Print</button>
             </article>
     
     
             <!-- another self-contained card -->
             <article class="image_gallery_card">
-                <h3>Moab</h3> <!-- print product name -->
+                <h3>{{ printThreeName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a71e1cc7020e9c60e67d" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-Moab.jpg" 
-                alt="pink sky and canyon in Moab"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printThreeUrl"  
+                target="_blank"><img :src="printThreeImageFilename" alt="pink sky and canyon in Moab"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a71e1cc7020e9c60e67d')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a71e1cc7020e9c60e67d')">Shop the Print</button>
             </article>
 
 
             <!-- another self-contained card -->
             <article class="image_gallery_card">
-                <h3>Rainier</h3> <!-- print product name -->
+                <h3>{{ printFourName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2e91cc7021a907c1756" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-Mt-Rainier.jpg" 
-                alt="snow-capped Mt Rainier with alpenglow"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printFourUrl" 
+                target="_blank"><img :src="printFourImageFilename" alt="snow-capped Mt Rainier with alpenglow"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2e91cc7021a907c1756')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2b2e91cc7021a907c1756')">Shop the Print</button>
             </article>
 
     
             <!-- another self-contained card -->
             <article class="image_gallery_card">
-                <h3>Utah Desert</h3> <!-- print product name -->
+                <h3>{{ printFiveName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a9521cc7021a907c14dc" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-Capitol-Reef.jpg" 
-                alt="dusty orange Utah desert road at sunrise"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printFiveUrl"  
+                target="_blank"><img :src="printFiveImageFilename" alt="dusty orange Utah desert road at sunrise"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a9521cc7021a907c14dc')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a9521cc7021a907c14dc')">Shop the Print</button>
             </article>
     
 
             <!-- another self-contained card -->
             <article class="image_gallery_card">
-                <h3>Snowy Alpine</h3> <!-- print product name -->
+                <h3>{{ printSixName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef37c9237dfb2110c9a2667" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-snowy-mountains.jpg" 
-                alt="snow covered mountains"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printSixUrl"  
+                target="_blank"><img :src="printSixImageFilename" alt="snow covered mountains"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef37c9237dfb2110c9a2667')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef37c9237dfb2110c9a2667')">Shop the Print</button>
             </article>
 
 
             <!-- another self-contained card -->
             <article class="image_gallery_card">
-                <h3>Aqua Lake</h3> <!-- print product name -->
+                <h3>{{ printSevenName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a6b41cc70217a89e83cb" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-Rocky-Mountain-lake.jpg" 
-                alt="aqua color lake in the Rockies"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printSevenUrl"  
+                target="_blank"><img :src="printSevenImageFilename" alt="aqua color lake in the Rockies"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a6b41cc70217a89e83cb')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef2a6b41cc70217a89e83cb')">Shop the Print</button>
             </article>
     
 
             <!-- another self-contained card -->
             <article class="image_gallery_card">
-                <h3>Telluride</h3> <!-- print product name -->
+                <h3>{{ printEightName }}</h3> <!-- print product name -->
                 <!-- product image -->
-                <a href="https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef3826fa687ba050c08db9d" 
-                target="_blank"><img src="multimedia/framed-art-for-sale-Telluride.jpg" 
-                alt="San Juan Mountains at golden hour"></a>
-                <p class="price_p">Price: &#36;247.95</p> <!-- product price -->
+                <a v-bind:href="printEightUrl"  
+                target="_blank"><img :src="printEightImageFilename" alt="San Juan Mountains at golden hour"></a>
+                <p class="price_p">{{ printPrice }}</p> <!-- product price -->
                 <!-- button to shop the print -->
                 <button type="button"
-                onclick="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef3826fa687ba050c08db9d')">Shop the Print</button>
+                v-on:click="window.open('https://sheenashahangian.pic-time.com/art/adventurelandscapes/5ef3826fa687ba050c08db9d')">Shop the Print</button>
             </article>
 
         </section>
@@ -260,6 +246,8 @@
     </footer>
 
     <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script> <!--Include Vue-->
+    <script src="js/shopapp.js"></script>
     <script src="js/dropdowns.js"></script>
     <script src="js/animations.js"></script>
 
