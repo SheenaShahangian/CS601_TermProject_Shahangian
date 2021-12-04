@@ -46,3 +46,5 @@ async function fetchBucketList() {
         console.log("Dang it! We had an issue fetching the location info!");
     });
 }
+
+fetchBucketList();
