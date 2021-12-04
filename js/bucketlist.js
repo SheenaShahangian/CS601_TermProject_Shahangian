@@ -30,6 +30,8 @@ async function fetchBucketList() {
                 locationList += `<ul>${data.bucket_list_locations[index].location.name}</ul>`;
             }
 
+            console.log(locationList);
+
             // write the list of bucket list locations to the page
             bucketListContainer.innerHTML = locationList;
         }
