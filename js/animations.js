@@ -56,6 +56,7 @@ function makeAnimation() {
 
         // clears the timer we set up earlier
         clearInterval(animationIntervalTimer);
+        animationIntervalTimer = null;
         return;
     }
 
