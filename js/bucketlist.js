@@ -28,10 +28,10 @@ async function fetchBucketList() {
             for (let i = 0; i <= 7; i++) {
                 console.log("in loop");
                 console.log(data.bucket_list_locations[i].location.name);
-                locationList += `<ul>${data.bucket_list_locations[i].location.name}</ul>`;
+                //locationList += `<ul>${data.bucket_list_locations[i].location.name}</ul>`;
             }
 
-            console.log(locationList);
+            console.log("Locations: " + locationList);
 
             // write the list of bucket list locations to the page
             bucketListContainer.innerHTML = locationList;
