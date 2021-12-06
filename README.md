@@ -99,6 +99,8 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 
 ### Vue Mastery
 
+I have opted to go above and beyond by including Vue on more than one page on my website.
+
 ### DOM Mastery
 
 ### Validation/Accessibility
@@ -110,5 +112,11 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 I've attempted to add some new features beyond the standard requirements listed in the rubric. These include: 
 
 * I have incorporated Flexbox for some of my multi-column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in).
+
+* I have used multiple ES6 functionality and higher, along with the content taught in Module 5. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher...
+
+* I have created custom imagery for my website, including my own logo, and icons that I personally designed. All images used on the website are also images that I have taken.
+
+* I have run all imagery through an image optimizer prior to being added to the website, to ensure they are not too large.
 
   

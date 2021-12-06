@@ -45,51 +45,58 @@
         </section>
 
 
-        <!-- this section introduces the articles page page -->
-        <section class="single_column_section">
+        <!-- this section introduces the articles page page (and it uses Vue) -->
+        <section class="single_column_section" id="articlesapp">
 
-            <h2>Sharing My Experiences and Expertise</h2>
+            <h2>{{ articlesPageSecondaryHeading }}</h2>
 
-            <p>
-                As a wedding industry professional, it's my job to know the ins and outs of the industry. It's this 
-                skill set that has made me a freelance writer for Green Wedding Shoes, a major US-based wedding 
-                blog. I write on all sorts of wedding planning related topics, providing helpful advice and guidance 
-                to couples as they put together their dream wedding day.
-            </p>
+            <p>{{ articlesIntroParagraph }}</p>
 
-            <p>
-                In addition to my writing for Green Wedding Shoes, I have also submitting my writing to a few other 
-                publications, where I've shared my experiences as an elopement photographer, along with my journey 
-                as a woman in the great outdoors. This is just a small sample of my writing.
-            </p>
+            <!-- first article -->
+            <article>
+                <!-- change the icon to reveal the publisher name when hovered over -->
+                <div @mouseover="hoverIconOne" @mouseleave="unHoverIcon">
+                    <img :src="articleIcon" v-show="articleOneStandardIconVisibility" alt="icon representing an article">
+                    <img :src="gwsArticleIcon" v-show="articleOneSpecificIconVisibility" alt="icon representing a Green Wedding Shoes article">
+                </div>
+                <h3 class="article_title">{{ articleOneTitle }}</h3>
+                <p class="publisher">{{ gws }}</p>
+            </article>
+
+            <!-- second article -->
+            <article>
+                <!-- change the icon to reveal the publisher name when hovered over -->
+                <div @mouseover="hoverIconTwo" @mouseleave="unHoverIcon">
+                    <img :src="articleIcon" v-show="articleTwoStandardIconVisibility" alt="icon representing an article">
+                    <img :src="thoughtCatalogArticleIcon" v-show="articleTwoSpecificIconVisibility" alt="icon representing a Thought Catalog article">
+                </div>
+                <h3 class="article_title">{{ articleTwoTitle }}</h3>
+                <p class="publisher">{{ outbound }}</p>
+            </article>
+
+            <!-- third article -->
+            <article>
+                <!-- change the icon to reveal the publisher name when hovered over -->
+                <div @mouseover="hoverIconThree" @mouseleave="unHoverIcon">
+                    <img :src="articleIcon" v-show="articleThreeStandardIconVisibility" alt="icon representing an article">
+                    <img :src="outboundArticleIcon" v-show="articleThreeSpecificIconVisibility" alt="icon representing an article from the Outbound">
+                </div>
+                <h3 class="article_title">{{ articleThreeTitle }}</h3>
+                <p class="publisher">{{ thoughtCatalog }}</p>
+            </article>
+
+            <!-- fourth article -->
+            <article>
+                <!-- change the icon to reveal the publisher name when hovered over -->
+                <div @mouseover="hoverIconFour" @mouseleave="unHoverIcon">
+                    <img :src="articleIcon" v-show="articleFourStandardIconVisibility" alt="icon representing an article">
+                    <img :src="gwsArticleIcon" v-show="articleFourSpecificIconVisibility" alt="icon representing a Green Wedding Shoes article">
+                </div>
+                <h3 class="article_title">{{ articleFourTitle }}</h3>
+                <p class="publisher">{{ gws }}</p>
+            </article>
 
         </section>
-
-        <div class="single_column_section">
-            <!-- miniature collection of images of elopements -->
-            <div class="carousel_slide visible_slide">
-                <img src="multimedia/keystone-elopement-at-sunrise.jpg" 
-                alt="couple dancing in the morning mountain light">
-            </div>
-
-            <div class="carousel_slide hidden_slide">
-                <img src="multimedia/leadville-elopement-in-the-woods.jpg" 
-                alt="bride sitting on groom's shoulders in the forest">
-            </div>
-            
-            <div class="carousel_slide hidden_slide">
-                <img src="multimedia/north-cascades-elopement-at-sunset.jpg" 
-                alt="eloping couple standing by an alpine lake at sunset">
-            </div>
-
-            <div class="carousel_slide hidden_slide">
-                <img src="multimedia/sand-dunes-elopement.jpg" 
-                alt="eloping couple at walking on sand dunes">
-            </div>
-            
-            <button type="button" class="carousel_button" onclick="previousSlide()">Prev</button>
-            <button type="button" class="carousel_button" onclick="nextSlide()">Next</button>
-        </div>
 
     </main>
 
@@ -102,7 +109,8 @@
     </footer>
 
     <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script> <!--Include Vue-->
+    <script src="js/articlesapp.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/carousel.js"></script>
     
