@@ -59,31 +59,58 @@
                     <img :src="articleIcon" v-show="articleOneStandardIconVisibility" alt="icon representing an article">
                     <img :src="gwsArticleIcon" v-show="articleOneSpecificIconVisibility" alt="icon representing a Green Wedding Shoes article">
                 </div>
+
                 <h3 class="article_title">{{ articleOneTitle }}</h3>
-                <p class="publisher">{{ gws }}</p>
+                <p class="publisher">Publisher: {{ gws }}</p>
+                <p v-show="isBlurbOneVisible">{{ articleOneBlurb }}</p>
+
+                <!-- read more button -->
+                <button type="button" v-show="isReadMoreButtonOneVisibility" v-on:click="articleOneReadMore">{{ readMoreButtonText }}</button>
+                <!-- go to article's link on publisher's site button -->
+                <button type="button" v-show="isGoToArticleOneVisibility"
+                v-on:click="window.open('https://greenweddingshoes.com/when-to-send-wedding-invitations/')">{{ goToArticleButtonText }}</button>
             </article>
+
 
             <!-- second article -->
             <article>
                 <!-- change the icon to reveal the publisher name when hovered over -->
                 <div @mouseover="hoverIconTwo" @mouseleave="unHoverIcon">
                     <img :src="articleIcon" v-show="articleTwoStandardIconVisibility" alt="icon representing an article">
-                    <img :src="thoughtCatalogArticleIcon" v-show="articleTwoSpecificIconVisibility" alt="icon representing a Thought Catalog article">
+                    <img :src="outboundArticleIcon" v-show="articleTwoSpecificIconVisibility" alt="icon representing a Thought Catalog article">
                 </div>
+
                 <h3 class="article_title">{{ articleTwoTitle }}</h3>
-                <p class="publisher">{{ outbound }}</p>
+                <p class="publisher">Publisher: {{ outbound }}</p>
+                <p v-show="isBlurbTwoVisible">{{ articleTwoBlurb }}</p>
+
+                <!-- read more button -->
+                <button type="button" v-show="isReadMoreButtonTwoVisibility" v-on:click="articleTwoReadMore">{{ readMoreButtonText }}</button>
+                <!-- go to article's link on publisher's site button -->
+                <button type="button" v-show="isGoToArticleTwoVisibility"
+                v-on:click="window.open('https://www.theoutbound.com/sheena-shahangian/a-story-for-the-folks-who-never-thought-they-d-be-outdoorsy')">{{ goToArticleButtonText }}</button>
             </article>
+
 
             <!-- third article -->
             <article>
                 <!-- change the icon to reveal the publisher name when hovered over -->
                 <div @mouseover="hoverIconThree" @mouseleave="unHoverIcon">
                     <img :src="articleIcon" v-show="articleThreeStandardIconVisibility" alt="icon representing an article">
-                    <img :src="outboundArticleIcon" v-show="articleThreeSpecificIconVisibility" alt="icon representing an article from the Outbound">
+                    <img :src="thoughtCatalogArticleIcon" v-show="articleThreeSpecificIconVisibility" alt="icon representing an article from the Outbound">
                 </div>
+
                 <h3 class="article_title">{{ articleThreeTitle }}</h3>
-                <p class="publisher">{{ thoughtCatalog }}</p>
+                <p class="publisher">Publisher: {{ thoughtCatalog }}</p>
+                <p v-show="isBlurbThreeVisible">{{ articleThreeBlurb }}</p>
+                
+                <!-- read more button -->
+                <button type="button" v-show="isReadMoreButtonThreeVisibility" v-on:click="articleThreeReadMore">{{ readMoreButtonText }}</button>
+                <!-- go to article's link on publisher's site button -->
+                <button type="button" v-show="isGoToArticleThreeVisibility"
+                v-on:click="window.open('https://thoughtcatalog.com/sheena-shahangian/2021/03/3-reasons-why-elopements-arent-just-a-covid-19-trend/')">{{ goToArticleButtonText }}</button>
             </article>
+
 
             <!-- fourth article -->
             <article>
@@ -92,8 +119,16 @@
                     <img :src="articleIcon" v-show="articleFourStandardIconVisibility" alt="icon representing an article">
                     <img :src="gwsArticleIcon" v-show="articleFourSpecificIconVisibility" alt="icon representing a Green Wedding Shoes article">
                 </div>
+
                 <h3 class="article_title">{{ articleFourTitle }}</h3>
-                <p class="publisher">{{ gws }}</p>
+                <p class="publisher">Publisher: {{ gws }}</p>
+                <p v-show="isBlurbFourVisible">{{ articleFourBlurb }}</p>
+                
+                <!-- read more button -->
+                <button type="button" v-show="isReadMoreButtonFourVisibility" v-on:click="articleFourReadMore">{{ readMoreButtonText }}</button>
+                <!-- go to article's link on publisher's site button -->
+                <button type="button" v-show="isGoToArticleFourVisibility"
+                v-on:click="window.open('https://greenweddingshoes.com/where-to-buy-dried-flowers-and-bouquets/')">{{ goToArticleButtonText }}</button>
             </article>
 
         </section>

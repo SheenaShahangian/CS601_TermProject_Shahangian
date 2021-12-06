@@ -11,6 +11,8 @@ let shopapp = new Vue({
 
         printPrice: "Price: $247.95", // price is the same for all prints
 
+        shopPrintButtonText: "Shop the Print",
+
         // data for print one
         printOneName: "Half Dome",
         printOneImageFilename: "multimedia/framed-art-for-sale-Half-Dome.jpg",
