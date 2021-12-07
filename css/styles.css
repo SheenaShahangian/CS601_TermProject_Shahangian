@@ -222,6 +222,46 @@ blockquote p {
 }
 
 
+/* --------------------- FEATURED ARTICLES STYLES ----------------------- */
+
+/* Style the featured article */
+.featured_article {
+    background-color: #f8f4f1; /* off-white background to stand out */
+    margin: 1rem;
+    padding: 3rem;
+    width: 30%;
+    border-radius: 20px;
+
+}
+
+/* Style the article icons */
+.article_icon {
+    width: 150px;
+    height: 150px;
+}
+
+/* Style the h3 in featured articles to not have padding */
+.featured_article h3 {
+    padding: 0;
+}
+
+/* Style the publisher text to be heavier weight */
+.publisher {
+    font-weight: 500;
+}
+
+/* Style the button on the featured articles to have a background that matches 
+the card */
+.featured_article button {
+    background-color: #f8f4f1;
+}
+
+/* Style the paragraphs in the featured articles to not have margin on the top or bottom */
+.single_column_section .featured_article p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 /* --------------------- CAROUSEL STYLES ------------------------ */
 
@@ -1025,6 +1065,25 @@ footer a {
     ul {
         width: 80%;
         font-size:0.9rem;
+    }
+
+
+    /* ----------------------- FEATURED ARTICLE STYLES FOR MOBILE -------------------------- */
+    
+    /* Style the featured article so it takes up more width than on desktop and tablet */
+    .featured_article {
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    /* Style the h3 for featured articles on mobile so that they don't left align */
+    .featured_article h3 {
+        text-align: center;
+    }
+
+    /* Style the paragraphs for featured articles on mobile so they also aren't left aligned */
+    .featured_article p {
+        text-align: center;
     }
 
 
