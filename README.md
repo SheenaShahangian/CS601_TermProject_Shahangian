@@ -1,6 +1,6 @@
 # Read Me - MET CS 601 Sheena Shahangian
 
-This iteration of my website contains the HTML for 8 fully designed and styled pages. The homepage is the filename "index.html". I have placed the stylesheet (styles.css) in the css directory, and all photos and icons within the "multimedia" directory. 
+This iteration of my website contains the HTML for 8 fully designed and styled pages. The homepage is the filename "index.html". I have placed the stylesheet (styles.css) in the css directory, and all photos and icons within the "multimedia" directory. To access the live website (which is hosted on Netlify), please go to: https://vigilant-allen-c8453f.netlify.app/
 
 JavaScript can be found in the js directory. To keep my code organized, I have split out my project into several JavaScript files with intentionally self-explanatory filenames). Please note: I have seven pages in the navigation bar, but eight pages total. The eighth page is simply a form submission confirmation page, which should never be included in a main navigation, as that wouldn't make sense. However, this page does have the navigation bar on it, to encourage users to keep perusing the site after they have submitted their form. 
 
@@ -21,9 +21,7 @@ The repository is public, however should you have any trouble accessing it, plea
 
 * All pages are styled using the same single external stylesheet, per the recommendation provided during week 2. As it is quite long, I have used comments to organize the code and make the stylesheet easy and clean to navigate. Media styles for tablet screen sizes and mobile screen sizes are located at the bottom of the stylesheet for easy reference, and thorough comments are provided thoroughout those sections as well.
 
-## Requested Elements
-
-### The Intended Audience
+## The Intended Audience
 
 Before diving into how I've met and exceeded requirements, it's important to note who the intended audience of this website is. For a living, I am a professional photographer who specializes in photographing small weddings (referred to as elopements) in adventurous locations (e.g., the mountains). To use the industry terminology, I am what is called an "adventure elopement photographer." My business's website focuses solely on this, with the intent of functioning as a sales funnel to get clients to inquire and book with me. My business's website (not to be confused with this term project, to be clear) is not a portfolio, but rather what I refer to as my "inquiry machine."
 
@@ -34,6 +32,8 @@ All of that said, there are a few target audiences for this site. The first woul
 Another target audience would be outdoors brands who want to work with a photographer who is well-versed in the outdoors space. I have yet to pursue commercial outdoors photography, beyond adventure elopements, but the idea interests me. I want a site that shows off that something like that could be in my wheelhouse, should the opportunity present itself.
 
 The last target audience would be anyone interested in buying landscape prints from someone who spends much of her life and work in the great outdoors. I'm a big believer in always finding a way to monetize a website, and in this example, adding a landscape photography storefront was a perfect fit. While this is a portfolio site, there is no reason why I can't also point visitors towards making a purchase if they like my work.
+
+## Requested Elements
 
 ### Design and Layout
 
@@ -132,7 +132,35 @@ The site has been thoroughly tested to make sure there are no missing graphics o
   * Similarly, on the articles page, I have also used Flexbox to create a two column layout for displaying four of my articles. This two column layout is consistent on both desktop and tablet settings, but turns into a one column layout when you transition to mobile-like width.
   * Generally speaking, media queries are used on this site to make font size and text alignment feel proportionate to screens size. They are also used to ensure that multi-column layouts render as single column on mobile, as that makes more sense on that screen size. All of these changes are to increase readability, while still maintaining the intended design.
 
-### JavaScript Mastery
+### JavaScript and DOM Mastery
+
+At the most basic level, JavaScript was used to make the buttons on my website interactive, whether that was a button using window.open() to go to an external site or calling methods that performed other conditional actions.
+
+You'll notice that, aside from my h1 animations, I don't really use the same JavaScript across all pages consistently. It tends to vary on a page-by-page basis, unlike, for example, my styles. Given that, I have opted to split up my JavaScript into various different files to ensure faster load times.
+
+All JavaScript files can be found in the js folder. I will avoid speaking to the shopapp.js and articlesapp.js files, as those I go into more detail on in the Vue section (below). But I will speak to all the other js files below and what they do.
+
+Given the interconnectedness of the DOM in my JavaScript, I have opted to group together the section on DOM with the section on JavaScript, as they go hand-in-hand in much of my code.
+
+#### 1. animations.js
+
+This JavaScript file is responsible for the animations of text that you see on the h1 on every page of the website.
+
+#### 2. bucketlist.js
+
+#### 3. carousel.js
+
+#### 4. contactform.js
+
+#### 5. dropdowns.js
+
+#### 6. travelform.js
+
+
+
+
+
+
 
 ### Vue Mastery
 
@@ -165,8 +193,6 @@ Lastly, v-on:click is used on the "Go to Article" buttons to call the window.ope
 Please note that if you run the HTML on the shop.html page or the articles.html page, you will receive inevitable errors and warnings for the parts of the page that have incorporated Vue, as the validator does not understand Vue. That said, I have ensured that these pages passed all validations prior to the addition of Vue, and also double checked that all errors were Vue-related and not actual HTML errors.
 
 
-
-### DOM Mastery
 
 ### Validation/Accessibility
 
