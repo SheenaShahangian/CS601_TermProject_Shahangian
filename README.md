@@ -285,6 +285,12 @@ Let's take the home page as a good example of frequent use of Flexbox. I have a 
 
 <img width="1672" alt="Screen Shot 2021-12-10 at 10 46 41 AM" src="https://user-images.githubusercontent.com/74014027/145618694-78fb88c2-b5ca-4966-8a0d-f7f6e2fbceae.png">
 
+
+
+I also have another example of a four column layout on the travels page, as can be seen via the image linked below:
+
+<img width="1667" alt="Screen Shot 2021-12-10 at 2 48 30 PM" src="https://user-images.githubusercontent.com/74014027/145645593-271d33b5-d3dc-4678-8201-7639346fa4d6.png">
+
 As you scroll further down the page, you'll see another h2 "Let's Go on a Journey" which has an introductory blurb. Underneath that blurb paragraph, you'll come across aa two column layout (on desktop view). This was also accomplished using Flexbox. I use both the two column and four column layout throughout the website, but this page highlights both of them nicely in one place. I'll provide an image linked below of this part of the website:
 
 <img width="1061" alt="Screen Shot 2021-12-10 at 10 47 24 AM" src="https://user-images.githubusercontent.com/74014027/145618801-fbc66021-c0a3-4d23-ab45-cfa22e2ec770.png">
@@ -296,6 +302,8 @@ Another use of Flexbox on my website, as mentioned earlier in this report, was o
 <img width="1671" alt="Screen Shot 2021-12-10 at 1 31 33 PM" src="https://user-images.githubusercontent.com/74014027/145637626-9b76ab33-655d-40c7-ac69-65537c5c4e9d.png">
 
 
+
+Please note, the images above are not an exhaustive collection of all uses of Flexbox on my website, but rather a sample example.
 
 #### Adding ES6 or Higher Functionality + Including Content From Module 5 (Including the Fetch API)
 
