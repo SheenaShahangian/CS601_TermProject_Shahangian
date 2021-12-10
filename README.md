@@ -134,7 +134,7 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 
 ### JavaScript and DOM Mastery
 
-At the most basic level, JavaScript was used to make the buttons on my website interactive, whether that was a button using window.open() to go to an external site or calling methods that performed other conditional actions.
+At the most basic level, JavaScript was used to make the buttons on my website interactive, whether that was a button using window.open() to go to an external site or calling functions that performed other conditional actions.
 
 You'll notice that, aside from my h1 animations, I don't really use the same JavaScript across all pages consistently. It tends to vary on a page-by-page basis, unlike, for example, my styles. Given that, I have opted to split up my JavaScript into various different files to ensure faster load times.
 
@@ -144,11 +144,47 @@ Given the interconnectedness of the DOM in my JavaScript, I have opted to group 
 
 #### 1. animations.js
 
-This JavaScript file is responsible for the animations of text that you see on the h1 on every page of the website.
+This JavaScript file is responsible for the animations of text that you see on the h1 on every page of the website. While I specifically used animations on h1s, they can be used on any text with the class "animated_heading". You'll notice I use the query selector(document.querySelector()) to grab the element from the DOM with that class name.
+
+This is done so I can get split the contents of this text into an array by character. I then re-assign the inner text of that heading to be blank, as I'll want to replace it with the animated text. The reason for splitting the contents of the original text into an array was so that I could make each letter into a span that could then have animations applied to it.
+
+So I then use a function I named eachLetterInSpan() that converts the original text so that each letter is wrapped in span tags with a class of "letter_span", and this completed string with spans is written to the innerHTML.
+
+My makeAnimation() function is really where the magic happens here, though. First, I use querySelectorAll to get all elements that are of the class "letter_span", which was all the letter spans I created in the previous function. Essentially, I need to get all the letters (that are contained in the spans of class .letter_span). I do this so I can then add the class "fading_animation" to each of them, which gives the letter an opacity of 1 (whereas you'll notice that the class letter_span in the CSS actually has an opacity of 0.15). Essentially, this allows an animation to each letter where it goes from being nearly transparent to completely opaque.
+
+**Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: the template string. It is used in my eachLetterInSpan() function. I have also used the for...of loop as well within this same function, which is another ES6 feature. I have also only used let and const here, rather than var.
 
 #### 2. bucketlist.js
 
+The intent of the bucketlist.js file is to fetch data I have included in a JSON file (by the name of bucketlist.json) that contains the names of destinations that are on my travel bucket list. The program fetches this data and then populates an unordered list located in an aside on the travels page with this content.
+
+I have a variable I name bucketListContainer in this JavaScript file that I do the following on: document.querySelector(".travel_list"). I use the querySelector to grab the element from the DOM with the class name travel_list, which is what will eventually hold the fetched contents of my travel bucket list.
+
+After fetching the necessary data from the JSON file (using fetch, introduced in Module 5), I then use bucketListContainer.innerHTML to essentially write in the new list items into the container.
+
+**Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: the template string. It is used when populating my li (list items) with the contents/locations from the JSON file. Arrow functions and promises, both new ES6 features, are used in this file as well. I have also only used let and const here, rather than var. Furthermore, I have also used an async function, per the professor's recommendation (which is an ES8 feature).
+
+I have also used fetch and data stored in a JSON file that I then use to populate content on the website. This is another extra credit item.
+
 #### 3. carousel.js
+
+As much of my website is imagery-focused, I wanted to try my hand at building a carousel in JavaScript. The carousel I built lives on the travels page, and has "next" and "prev" buttons that allow the user to click and circle through the images in forward or reverse order for as long as they'd like (it'll circle back to the beginning in a loop, no matter). I had to use a little bit of mathematical magic, using the modulus operator to make this work.
+
+In travels.html I have four divs that contain only an image that will repesent a carousel slide. As such, each div is of the class "carousel_slide". In addition all images, except for the first one are of the class "hidden_slide". The first image is of class "visible_slide", as I want this slide to be the one that is seen in the carousel (as the carousel shows one image at a time).
+
+Underneath the divs you'll find two buttons. One is used to go to the next image and the other is used to go to the previous image. Each of these buttons has a DOM event (the onclick event). For the previous button, a click triggers the previousSlide() function, and for the next button, a click triggers the nextSlide() function.
+
+So how do we actually go from one slide/image to the next? That's where my carousel.js file comes in. 
+
+This file contains both the previousSlide() and nextSlide() functions. However, before we do anything with those fuctions, first we must get all the items in the carousel. I do this with this line: const carouselItems = document.querySelectorAll(".carousel_slide"); which uses querySelectorAll to grab all divs with the class "carousel_slide".
+
+I also set a slide index that keeps track of which slide we're on.
+
+The nextSlide() function's responsibility is to hide the current slide and make the one in the next index over visible (we are changing the class name of the current slide to "hidden_slide" and the next one to "visible_slide"). 
+
+The previousSlide() function does something similar, but in the opposite direction. It too hides the current slide, by changing its class name (which in turn will change its styles and make it invisible). However, it will now make the previous image (by index) the visible one.
+
+**Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: the use of let and const rather than var.
 
 #### 4. contactform.js
 
@@ -200,11 +236,11 @@ Please note that if you run the HTML on the shop.html page or the articles.html 
 
 ### Extra Credit - How I Went Above and Beyond
 
-I've attempted to add some new features beyond the standard requirements listed in the rubric. These include: 
+I've attempted to add some new features beyond the standard requirements listed in the rubric. I have noted these throughout the report above, in sections named **Extra Credit Note**, but I'll provide an overview again here. These include: 
 
-* I have incorporated Flexbox for some of my multi-column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in).
+* I have incorporated Flexbox for my multi-column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in). You'll notice Flexbox, for example, used on the articles pages for the two-column layout of articles. It is also used on the home page, the biography page, the travels page, and the confirmation page for two column layouts as well. I have also used it for four column layouts on the site as well.
 
-* I have used multiple ES6 functionality and higher, along with the content taught in Module 5. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher...
+* I have used multiple ES6 functionality and higher, along with the content taught in Module 5. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher, you'll notice an abundant use of template strings throughout the project's JavaScript files. I have also leveraged the for...each loop as well.
 
 * I have created custom imagery for my website, including my own logo, and icons that I personally designed. All images used on the website are also images that I have taken.
 
