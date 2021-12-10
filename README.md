@@ -128,8 +128,8 @@ The site has been thoroughly tested to make sure there are no missing graphics o
   * On desktop, all three columns in the table on the biography page are visible. To make the mobile design more streamlined and less cluttered, I have hidden that last column using media queries for the publication location. For tablet, I have done the same, but for publication date/year.
   * On desktop and tablet, the aside takes up 40% of the width and gives a sort of multi-column effect with the content that sits next to it (I used float to accomplish this). On mobile, however, that didn't make sense, so I changed float to none so the aside could take up its own column and sit above the content it previously sat next to on tablet and desktop. The aside is now centered and takes an 80% width.
   * On desktop, the iframe used to embed YouTube videos on the biography page has a width of 60%, and media queries were used to change this to 100% for both tablet and mobile.
-  * I have used Flexbox to create a two column layout on portions of the home page, the biography page, the travels page, and the form submission confirmation page. However, on mobile, I do not want two columns for these spots; I'd rather have one, so the content can be larger. Thus I have used media queries to do that and change the flex container to display as a block level element. The cards/contents in that container now have a width of 100% instead of 50%, as the 50% was only relevant for tablet and desktop.
-  * Similarly, on the articles page, I have also used Flexbox to create a two column layout for displaying four of my articles. This two column layout is consistent on both desktop and tablet settings, but turns into a one column layout when you transition to mobile-like width.
+  * **Extra Credit Note: **I have used Flexbox to create a two column layout on portions of the home page, the biography page, the travels page, and the form submission confirmation page. However, on mobile, I do not want two columns for these spots; I'd rather have one, so the content can be larger. Thus I have used media queries to do that and change the flex container to display as a block level element. The cards/contents in that container now have a width of 100% instead of 50%, as the 50% was only relevant for tablet and desktop.
+  * **Extra Credit Note: **Similarly, on the articles page, I have also used Flexbox to create a two column layout for displaying four of my articles. This two column layout is consistent on both desktop and tablet settings, but turns into a one column layout when you transition to mobile-like width.
   * Generally speaking, media queries are used on this site to make font size and text alignment feel proportionate to screens size. They are also used to ensure that multi-column layouts render as single column on mobile, as that makes more sense on that screen size. All of these changes are to increase readability, while still maintaining the intended design.
 
 ### JavaScript and DOM Mastery
@@ -224,9 +224,11 @@ In regards to the DOM, the way I access the answer is through the following line
 
 #### 6. travelform.js
 
-Writing results to the DOM.
+At the bottom of my travels page, I have incorporated a fun little quiz form that helps the viewer determine which travel destination they should go to next. I accept the user's answers, calculate the results, and then write those results to the DOM.
 
+I assigned ids to all of my selectors that are used for each question on the quiz. Then, within my travelform.js file, I use document.getElementById() to get the user's responses from these selectors. It's these responses that I use to determine the answer to the quiz.
 
+**Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: using let rather than var. I have also used template strings when concatenating the various aspects of the user results to write to the DOM.
 
 
 
@@ -256,15 +258,17 @@ Furthermore, you'll notice each article's card at first contains a button that s
 
 Lastly, v-on:click is used on the "Go to Article" buttons to call the window.open() method, which then opens up the actual article's URL in a new tab when the button is clicked.
 
-#### A Note About Validation
-
-Please note that if you run the HTML on the shop.html page or the articles.html page, you will receive inevitable errors and warnings for the parts of the page that have incorporated Vue, as the validator does not understand Vue. That said, I have ensured that these pages passed all validations prior to the addition of Vue, and also double checked that all errors were Vue-related and not actual HTML errors.
-
 
 
 ### Validation/Accessibility
 
 * In order to make the website accessible, I have ensured that all images and appropriate and descriptive alt text. In addition to that, all form controls used on the site have labels included with them.
+
+#### A Note About Validation
+
+Please note that if you run the HTML on the shop.html page or the articles.html page, you will receive inevitable errors and warnings for the parts of the page that have incorporated Vue, as the validator does not understand Vue. That said, I have ensured that these pages passed all validations prior to the addition of Vue, and also double checked that all errors were Vue-related and not actual HTML errors.
+
+
 
 ### Extra Credit - How I Went Above and Beyond
 
@@ -272,7 +276,7 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * I have incorporated Flexbox for my multi-column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in). You'll notice Flexbox, for example, used on the articles pages for the two-column layout of articles. It is also used on the home page, the biography page, the travels page, and the confirmation page for two column layouts as well. I have also used it for four column layouts on the site as well.
 
-* I have used multiple ES6 functionality and higher, along with the content taught in Module 5. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher, you'll notice an abundant use of template strings throughout the project's JavaScript files. I have also leveraged the for...each loop as well.
+* I have used multiple ES6 functionality and higher, along with the content taught in Module 5 regarding fetch, async, and await. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher, you'll notice an abundant use of template strings throughout the project's JavaScript files. I have also leveraged the for...each loop, arrow functions, using let and const instead of var, and promises. My goal was to test out several ES6 functionalities in this term project.
 
 * I have created custom imagery for my website, including my own logo, and icons that I personally designed. All images used on the website are also images that I have taken.
 
