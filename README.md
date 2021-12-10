@@ -128,8 +128,7 @@ The site has been thoroughly tested to make sure there are no missing graphics o
   * On desktop, all three columns in the table on the biography page are visible. To make the mobile design more streamlined and less cluttered, I have hidden that last column using media queries for the publication location. For tablet, I have done the same, but for publication date/year.
   * On desktop and tablet, the aside takes up 40% of the width and gives a sort of multi-column effect with the content that sits next to it (I used float to accomplish this). On mobile, however, that didn't make sense, so I changed float to none so the aside could take up its own column and sit above the content it previously sat next to on tablet and desktop. The aside is now centered and takes an 80% width.
   * On desktop, the iframe used to embed YouTube videos on the biography page has a width of 60%, and media queries were used to change this to 100% for both tablet and mobile.
-  * **Extra Credit Note: **I have used Flexbox to create a two column layout on portions of the home page, the biography page, the travels page, and the form submission confirmation page. However, on mobile, I do not want two columns for these spots; I'd rather have one, so the content can be larger. Thus I have used media queries to do that and change the flex container to display as a block level element. The cards/contents in that container now have a width of 100% instead of 50%, as the 50% was only relevant for tablet and desktop.
-  * **Extra Credit Note: **Similarly, on the articles page, I have also used Flexbox to create a two column layout for displaying four of my articles. This two column layout is consistent on both desktop and tablet settings, but turns into a one column layout when you transition to mobile-like width.
+  * **Extra Credit Note: **I have used Flexbox to create a two column layout on portions of the home page, the biography page, the travels page, and the form submission confirmation page. However, on mobile, I do not want two columns for these spots; I'd rather have one, so the content can be larger. Thus I have used media queries to do that and change the flex container to display as a block level element. The cards/contents in that container now have a width of 100% instead of 50%, as the 50% was only relevant for tablet and desktop. Similarly, on the articles page, I have also used Flexbox to create a two column layout for displaying four of my articles. This two column layout is consistent on both desktop and tablet settings, but turns into a one column layout when you transition to mobile-like width.
   * Generally speaking, media queries are used on this site to make font size and text alignment feel proportionate to screen size. They are also used to ensure that multi-column layouts render as a single column on mobile, as that makes more sense on that screen size. All of these changes are to increase readability, while still maintaining the intended design.
 
 ### JavaScript and DOM Mastery
@@ -264,6 +263,10 @@ Lastly, v-on:click is used on the "Go to Article" buttons to call the window.ope
 
 * In order to make the website accessible, I have ensured that all images and appropriate and descriptive alt text. In addition to that, all form controls used on the site have labels included with them.
 
+* Not only is using semantic HTML introduced with HTML5 important from a development standpoint, as it provides additional meaning to the code when I look at it to make modifications as a developer, but it is also an important aspect of accessibility for screen readers. I want my site to be accessible to everyone, which is why ensuring I have used semantic HTML as much as possible has been a priority. As a basis for this, for example, all pages have at the bare minimum  a header element (with a nav element nested within it), a main element, and a footer element. These provide context for those using screen readers, and from a code standpoint, I also can see how it makes my code easier to digest and modify. The meaning and intent are clear.
+
+  Other examples of semantic HTML elements used on my website include (but are not limited to): the table tag (to indicate a table of data), the form tag (to indicate a form the user can fill out), the article tag (to indicate a self-contained component on a page), the section tag (which I commonly used to group related content into grouped sections), and the aside (which I use for content that feels more like an informational sidebar rather than primary content).
+
 #### A Note About Validation
 
 Please note that if you run the HTML on the shop.html page or the articles.html page, you will receive inevitable errors and warnings for the parts of the page that have incorporated Vue, as the validator does not understand Vue. That said, I have ensured that these pages passed all validations prior to the addition of Vue, and also double checked that all errors were Vue-related and not actual HTML errors.
@@ -274,9 +277,35 @@ Please note that if you run the HTML on the shop.html page or the articles.html 
 
 I've attempted to add some new features beyond the standard requirements listed in the rubric. I have noted these throughout the report above, in sections named **Extra Credit Note**, but I'll provide an overview again here. These include: 
 
-* I have incorporated Flexbox for my multi-column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in). You'll notice Flexbox, for example, used on the articles pages for the two-column layout of articles. It is also used on the home page, the biography page, the travels page, and the confirmation page for two column layouts as well. I have also used it for four column layouts on the site as well.
+#### Making My Site Responsive Using CSS Flexbox
 
-* I have used multiple ES6 functionality and higher, along with the content taught in Module 5 regarding fetch, async, and await. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher, you'll notice an abundant use of template strings throughout the project's JavaScript files. I have also leveraged the for...each loop, arrow functions, using let and const instead of var, and promises. My goal was to test out several ES6 functionalities in this term project.
+I have incorporated Flexbox for my multi-column layouts (as I read online that floats are less and less common these days and should start to be phased out, although I did use floats too to get some practice in). You'll notice Flexbox, for example, used on the articles pages for the two-column layout of articles. It is also used on the home page, the biography page, the travels page, and the confirmation page for two column layouts as well. I have also used it for four column layouts on the site as well.
+
+Let's take the home page as a good example of frequent use of Flexbox. I have a four column layout (on desktop view) in the section with the h2 "The Many Sides of Sheena". This four column layout is created using Flexbox. I'll provide an image linked below of this part of the website:
+
+<img width="1672" alt="Screen Shot 2021-12-10 at 10 46 41 AM" src="https://user-images.githubusercontent.com/74014027/145618694-78fb88c2-b5ca-4966-8a0d-f7f6e2fbceae.png">
+
+As you scroll further down the page, you'll see another h2 "Let's Go on a Journey" which has an introductory blurb. Underneath that blurb paragraph, you'll come across aa two column layout (on desktop view). This was also accomplished using Flexbox. I use both the two column and four column layout throughout the website, but this page highlights both of them nicely in one place. I'll provide an image linked below of this part of the website:
+
+<img width="1061" alt="Screen Shot 2021-12-10 at 10 47 24 AM" src="https://user-images.githubusercontent.com/74014027/145618801-fbc66021-c0a3-4d23-ab45-cfa22e2ec770.png">
+
+Flexbox has allowed me to create a website with a more complex layout that felt more dynamic and interesting than having everything lined up in single columns going down the page, as would be standard otherwise for any block level elements. You'll notice the number of columns does change as screen size is modified. For example, on the home page, the two column layout is two columns on desktop and tablet screen sizes, but becomes single column on desktop, as it recommended design practice. Meanwhile, the four column layout, I have opted to keep four columns on desktop only, and have them become single column on both tablet and mobile.
+
+Another use of Flexbox on my website, as mentioned earlier in this report, was on my articles page, where I wanted to have card-like columns for each article. A linked image below shows this design using Flexbox yet again:
+
+<img width="1671" alt="Screen Shot 2021-12-10 at 1 31 33 PM" src="https://user-images.githubusercontent.com/74014027/145637626-9b76ab33-655d-40c7-ac69-65537c5c4e9d.png">
+
+
+
+#### Adding ES6 or Higher Functionality + Including Content From Module 5 (Including the Fetch API)
+
+I have used multiple ES6 functionality and higher, along with the content taught in Module 5 regarding fetch, async, and await. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher, you'll notice an abundant use of template strings throughout the project's JavaScript files. I have also leveraged the for...each loop, arrow functions, using let and const instead of var, and promises. My goal was to test out several ES6 functionalities in this term project.
+
+Please note, I have provided detailed notes about where ES6 and higher functionality was included within my section above on JavaScript and DOM mastery. Should you like to see more details on this, please reference the **Extra Credit Note** sections in that area of the report.
+
+
+
+#### Additional Ways I Have Gone Above and Beyond
 
 * I have created custom imagery for my website, including my own logo, and icons that I personally designed. All images used on the website are also images that I have taken.
 
