@@ -156,7 +156,7 @@ My makeAnimation() function is really where the magic happens here, though. Firs
 
 #### 2. bucketlist.js
 
-The intent of the bucketlist.js file is to fetch data I have included in a JSON file (by the name of bucketlist.json) that contains the names of destinations that are on my travel bucket list. The program fetches this data and then populates an unordered list located in an aside on the travels page with this content.
+The intent of the bucketlist.js file is to fetch data I have included in a JSON file (by the name of bucketlist.json) that contains the names of destinations that are on my travel bucket list. The program fetches this data and then populates an unordered list located in an aside on the travels page (https://vigilant-allen-c8453f.netlify.app/travels.html) with this content. Please note, in order for fetch to work, this feature must be viewed on the live site.
 
 I have a variable I name bucketListContainer in this JavaScript file that I do the following on: document.querySelector(".travel_list"). I use the querySelector to grab the element from the DOM with the class name travel_list, which is what will eventually hold the fetched contents of my travel bucket list.
 
@@ -168,7 +168,7 @@ I have also used fetch and data stored in a JSON file that I then use to populat
 
 #### 3. carousel.js
 
-As much of my website is imagery-focused, I wanted to try my hand at building a carousel in JavaScript. The carousel I built lives on the travels page, and has "next" and "prev" buttons that allow the user to click and circle through the images in forward or reverse order for as long as they'd like (it'll circle back to the beginning in a loop, no matter). I had to use a little bit of mathematical magic, using the modulus operator to make this work.
+As much of my website is imagery-focused, I wanted to try my hand at building a carousel in JavaScript. The carousel I built lives on the travels page (travels.html or https://vigilant-allen-c8453f.netlify.app/travels.html), and has "next" and "prev" buttons that allow the user to click and circle through the images in forward or reverse order for as long as they'd like (it'll circle back to the beginning in a loop, no matter). I had to use a little bit of mathematical magic, using the modulus operator to make this work.
 
 In travels.html I have four divs that contain only an image that will repesent a carousel slide. As such, each div is of the class "carousel_slide". In addition all images, except for the first one are of the class "hidden_slide". The first image is of class "visible_slide", as I want this slide to be the one that is seen in the carousel (as the carousel shows one image at a time).
 
@@ -188,11 +188,43 @@ The previousSlide() function does something similar, but in the opposite directi
 
 #### 4. contactform.js
 
+As the name implies, contactform.js contains the logic and program that is used for my contact form (contact.html or https://vigilant-allen-c8453f.netlify.app/contact.html).
+
+As can be expected, this program starts with grabbing various elements in the DOM. These include the form itself, the first name input, the last name input, the email input, and the phone number input.
+
+With this contact form, I wanted to level-up what we learned from the assignments. I wanted to add additional fields, like email and phone numbers (with the appropriate verifications). I also wanted to include a text area where users ca provide a detailed message to me about why they are contacting me. I also experimented with including placeholder text in the tex area, but I digress, as that is HTML. Let's get back to JavaScript!
+
+When the user clicks the submit button, an event listener is set up to run validations. If the validations don't pass, the form won't submit. If they do, the user is directed to a confirmation page that lets them know their form has successfully submitted (this page is confirmation.html). So let's talk about what happens with these validation checks.
+
+I very much liked the validation checks that were asked of us for the week 4 assignment for first and last name, and have implemented something similar. First and last names must include a-z characters, whether upper or lowercase. They can't include other characters, and they must be at least two characters in length. I trim whitespace to not allow for dummy spaces as text.
+
+Beyond these validations, however, I also use a regex to validate that the user has inputted a valid email. This validation goes beyond the standard HTML5 validation for email.
+
+Furthermore, I perform validation for phone number, which accepts a few different variations of phone numbers. For example, the user could enter their phone number as 6789259183 or they could enter it as 678-925-9183 or they could enter it as (678)925-9183. It also accepts other quirky variations like: (678-925-9183. This validation offers more flexibility to the user.
+
+When a form field is valid and the user submits, a success message is written to the DOM. Otherwise, a meaningful error message is written to the DOM. This is to ensure that the user knows what they did wrong and can course-correct when filling out the form again. I have used colors and bold text to get the point across.
+
+Specifically, I have spans that are hidden when the form is first accessed. I then use document.getElementById() to grab the necessary span to write either an error or success to the DOM, as appropriate in that scenario.
+
+**Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: using const and let rather than var. I have also used an arrow function within the addEventListener() method.
+
 #### 5. dropdowns.js
+
+One of the things I love seeing on websites is a dropdown/accordion Q&A. Specifically, I think it provides websites with a clean way to have a content-rich page, without making a page feel like it's full of large blocks of text. These dropdown accordions make it easy to expose and hide information, as needed. As such, I have included one of the shop page (shop.html or https://vigilant-allen-c8453f.netlify.app/shop.html), so that questions about purchasing items on the shop can be addressed (this is located underneath the prints themselves). I have also included a dropdown Q&A on the elopements page (elopements.html or https://vigilant-allen-c8453f.netlify.app/elopements.html), as elopements are a new concept to many, and I wanted to answer some common questions about them.
+
+To explain how this works, let's reference shop.html. Towards the bottom of the page, I have a section with a class name of "dropdown_content". This section contains frequently asked questions and their answers. Each Q&A combination is contained within an article, and within that article are two key elements. The first element is a div with class "question_and_icon" which contains the question alone with an arrow icon. The second element is a paragraph, which we want to be invisible at first, that contains the answer to the question.
+
+Now that we've gone over the HTML, that'll further clarify what is going on in the dropdown.js file. You'll notice that the div with the "question_and_icon" class, which as I mentioned earlier, contains the question and arrow icon, has an onclick event so that when its clicked on, a function toggleDropdownAccordion() is called.
+
+This function grabs the answer, which defaults to being hidden originally, and changes its class to "visible" so that stylistically it now shows up. We also need the functionality to re-hide as well, so we can close a question up. I have a toggleFlag that is a boolean that allows us to check the status of whether an answer is visible or not. If the flag is true, we actually want to hide the answer contents. So we do so, and then set the flag to false.
+
+In regards to the DOM, the way I access the answer is through the following line of code: const answer = question.nextElementSibling; where I use the nextElementSibling to access the answer, which then allows me to modify the answer content so it then incorporates either the class name "visible" or "invisible", which allows for that toggling.
+
+**Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: using const and let rather than var.
 
 #### 6. travelform.js
 
-
+Writing results to the DOM.
 
 
 

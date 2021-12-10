@@ -1,4 +1,4 @@
-/* This js file is responsible for animating the Q&A dropdowns that allow answers for certain 
+/* This js file is responsible for animating the Q&A drop-downs that allow answers for certain 
 questions to be expanded and hidden. This helps the page feel more clean and less content-heavy, 
 while still containing important information. */
 
