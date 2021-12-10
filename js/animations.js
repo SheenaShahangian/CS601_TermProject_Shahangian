@@ -71,4 +71,4 @@ function makeAnimation() {
 eachLetterInSpan(animatedHeadingContents);
 
 // the time between animations will be 80 ms
-let animationIntervalTimer = setInterval(makeAnimation, 85);
+let animationIntervalTimer = setInterval(makeAnimation, 35);
