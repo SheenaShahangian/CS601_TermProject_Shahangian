@@ -366,4 +366,6 @@ Please note, I have provided detailed notes about where ES6 and higher functiona
 
 * I have run all imagery through an image optimizer prior to being added to the website, to ensure they are not too large.
 
+* I have included meta descriptions on all HTML pages to give my website an added SEO benefit.
+
   
