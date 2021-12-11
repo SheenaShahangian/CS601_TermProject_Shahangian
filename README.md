@@ -1,12 +1,18 @@
 # Read Me - MET CS 601 Sheena Shahangian
 
-This iteration of my website contains the HTML for 8 fully designed and styled pages. The homepage is the filename "index.html". I have placed the stylesheet (styles.css) in the css directory, and all photos and icons within the "multimedia" directory. To access the live website (which is hosted on Netlify), please go to: https://vigilant-allen-c8453f.netlify.app/
+The completed version of my website contains the HTML for 8 fully designed and styled pages that use JavaScript. The homepage is the filename "index.html". I have placed the stylesheet (styles.css) in the css directory, and all photos and icons within the "multimedia" directory. All JavaScript files can be found in the folder named "js". To access the live website (which is hosted on Netlify), please go to: https://vigilant-allen-c8453f.netlify.app/
 
-JavaScript can be found in the js directory. To keep my code organized, I have split out my project into several JavaScript files with intentionally self-explanatory filenames). Please note: I have seven pages in the navigation bar, but eight pages total. The eighth page is simply a form submission confirmation page, which should never be included in a main navigation, as that wouldn't make sense. However, this page does have the navigation bar on it, to encourage users to keep perusing the site after they have submitted their form. 
+To keep my code organized, I have split out my project into several JavaScript files with intentionally self-explanatory filenames).
+
+Please note: I have seven pages in the navigation bar, but eight pages total. The eighth page is simply a form submission confirmation page, which should never be included in a main navigation, as that wouldn't make sense. However, this page does have the navigation bar on it, to encourage users to keep perusing the site after they have submitted their form. 
 
 Please see below for a description of where I have included the requested elements (and where I have provided extras).
 
 The website has been tested in Google Chrome, Firefox, and Safari. It has also been tested for responsiveness on different screen sizes.
+
+Information on how I have completed extra credit can be found at the end of this report.
+
+
 
 
 ## GitHub
@@ -21,9 +27,13 @@ The repository is public, however should you have any trouble accessing it, plea
 
 * All pages are styled using the same single external stylesheet, per the recommendation provided during week 2. As it is quite long, I have used comments to organize the code and make the stylesheet easy and clean to navigate. Media styles for tablet screen sizes and mobile screen sizes are located at the bottom of the stylesheet for easy reference, and thorough comments are provided throughout those sections as well.
 
+* When running code through a validator, please note that two pages use Vue and thus will inevitably give HTML validation errors: these include shop.html and articles.html.
+
+  
+
 ## The Intended Audience
 
-Before diving into how I've met and exceeded requirements, it's important to note who the intended audience of this website is. For a living, I am a professional photographer who specializes in photographing small weddings (referred to as elopements) in adventurous locations (e.g., the mountains). To use the industry terminology, I am what is called an "adventure elopement photographer." My business's website focuses solely on this, with the intent of functioning as a sales funnel to get clients to inquire and book with me. My business's website (not to be confused with this term project, to be clear) is not a portfolio, but rather what I refer to as my "inquiry machine."
+Before diving into how I've met and exceeded requirements, it's important to note who the intended audience of this website is. For a living, I am a professional photographer who specializes in photographing small weddings (referred to as elopements) in adventurous locations (e.g., the mountains). To use the industry terminology, I am what is called an "adventure elopement photographer." My business's website (not to be confused with this portfolio assignment) focuses solely on this, with the intent of functioning as a sales funnel to get clients to inquire and book with me. My business's website (again, not to be confused with this term project, to be clear) is not a portfolio, but rather what I refer to as my "inquiry machine."
 
 As such, before this course, I didn't really have a portfolio that showed off my overall creative skillset, beyond photographing adventure elopements. I, for example, also take and sell my landscape photographs. Furthermore, I am an avid traveler, and hope to provide travel advice and guidance to people visiting the mountain west. I'd love to have a portfolio that showcases that imagery and expertise. I also work as a freelance writer for a major wedding blog, and I want my portfolio to show off that work as well. In essence,  I wanted this term project to be my creative portfolio, showing off all the creative and artistic endeavors I work on as a creative professional. This site, while touching on my work as an adventure elopement photographer, is intended to go beyond that. It is intended to show that I am a well-rounded creative professional with a skill set beyond simply photographing weddings.
 
@@ -33,37 +43,53 @@ Another target audience would be outdoors brands who want to work with a photogr
 
 The last target audience would be anyone interested in buying landscape prints from someone who spends much of her life and work in the great outdoors. I'm a big believer in always finding a way to monetize a website, and in this example, adding a landscape photography storefront was a perfect fit. While this is a portfolio site, there is no reason why I can't also point visitors towards making a purchase if they like my work.
 
+See the linked image below for a brief recap of my target audience for this portfolio site:
+
+<img width="1284" alt="Screen Shot 2021-12-10 at 11 25 18 PM" src="https://user-images.githubusercontent.com/74014027/145666745-5f77764c-4e65-4e91-a212-94ee6f6a0986.png">
+
+## Noteworthy Changes Made Since My Live Presentation
+
+I have made sure to incorporate all feedback provided to me during my live presentation on Friday. The first thing I did was make sure I implemented a hamburger style menu for mobile. For desktop and tablet, you will see the standard menu (with some style changes depending on screen size), but per the professor's request to not clutter the page too much, I have created an interactive hamburger for mobile screen sizes.
+
+Per the request made about meaningful validation on the contact form, all user input errors that I write to the DOM on my contact form how contain detailed information on how to provide a valid input.
+
+Lastly, it was requested that I better style the quiz form on the travels page. I have given it a background and rounded corners, much like the article cards on the articles page. In addition, I have used Flexbox on desktop screen size to make sure the labels are left aligned and the selects are right aligned, per request.
+
+On tablet and mobile, I make all of these elements block level, as I believe this best suits the design for smaller screens.
+
+
+
 ## Requested Elements
 
 ### Design and Layout
 
 * The layout and design of the site are intended to take a colorful, yet minimalist approach. I did not want to overload the site with information and design elements that would detract from the content. Yet, I still wanted to ensure there was a cohesive brand associated with this site. This approach makes sense, as this site is meant to emanate an aura of professionality. It is not intended to be too showy or over-the-top. Yet, I also wanted it to have enough color and design to maintain the visitor's interest.
-* I custom created my own site logo and intentionally narrowed down on a refined color palette to use throughout the site. The color palette is consistent on every single page, and they use the same stylesheet intentionally. Furthermore, I also custom designed all of my own icons for this website, rather than downloading icons off the web. I wanted to provide a fully customized and branded experience to the viewer.
+* I custom created my own site logo and intentionally narrowed down on a refined color palette to use throughout the site. The color palette is consistent on every single page, and these pages all use the same stylesheet intentionally. Furthermore, I also custom designed all of my own icons for this website, rather than downloading icons off the web. I wanted to provide a fully customized and branded experience to the viewer, and this helped with that.
 * All pages on the website clearly belong to the same site, and the design and layout are consistent. I have intentionally used class selectors in my css to allow the reuse of designs on various pages. This further enhances the consistency in design and layout on the page.
 * As I speak to in greater detail in the CSS section, the site is responsive to three different screen sizes. I want to ensure my site functions for the greatest number of users as possible.
 
 ### Text
 
 * I have opted to use typefaces that are clean and legible. All typefaces used are san serif, as those are most legible when read on the screen (as indicated in our textbook).
-* I have chosen to only use 2 typefaces, per standard graphic design recommendation to not have too many typefaces in a single design. However, to ensure variety, I have leveraged various weights of the two typefaces. You will notice there feels like a variety of typefaces are used, while still remaining cohesive in style. This is acheived by using a variety of weights and casing, all within the same font family.
+* I have chosen to only use 2 typefaces, per standard graphic design recommendation to not have too many typefaces in a single design. However, to ensure variety, I have leveraged various weights of the two typefaces. You will notice there feels like there is a variety of typefaces are used, while still remaining cohesive in style. This is acheived by using a variety of weights and casing, all within the same font family.
 * All content has been proof-read for quality, presentation, and errors. My IDE performs appropriate spell-checking as well.
 
 ### Navigation
 
-* All pages on the website can be accessed via the main navigation bar. To access the home page, you can click the logo, as is customary in modern-day websites. The only exception to this linking structure is the contact form confirmation page (confirmation.html). This is because it is not customary to have a success page like this in the main navigation. It should only be visible once the user completes the call to action (in this case, submitting the form). You will notice, however, that this page does still have a navigation bar at the top, to encourage users to keep browsing, even after submitting the form. On desktop, I also have the contact navigation link as underlined (to show it's active) when you're on the confirmation page, because that makes stylistic sense, given that the user has just completed the contact form.
+* All pages on the website can be accessed via the main navigation bar. To access the home page, you can click the logo, as is customary in modern-day websites. The only exception to this linking structure is the contact form confirmation page (confirmation.html). This is because it is not customary to have a success page like this in the main navigation. It should only be visible once the user completes the call to action (in this case, submitting the contact form). You will notice, however, that this page does still have a navigation bar at the top, to encourage users to keep browsing, even after submitting the form. On desktop, I also have the contact navigation link as underlined (to show it's active) when you're on the confirmation page, because that makes stylistic sense, given that the user has just completed the contact form.
 * The main navigation bar is crafted with a clean and uncluttered design to make traveling through the site easy.
-* The website is well-organized, and the names of each tab in the navigation are abundantly clear as to what you can expect to see on the page. This is with the intent to increase click-through rates. The relationships between the pages is clear, and internal linking is provided throughout the site where it makes sense.
+* The website is well-organized, and the names of each tab in the navigation are abundantly clear as to what you can expect to see on the page. This is with the intent to increase click-through rates. The relationships between the pages are clear, and internal linking is provided throughout the site where it makes sense.
 * All hyperlinks, whether in the navigation and beyond, are meaningful in their names.
 * All page titles are appropriate and refer exactly to what that page is about.
-* As the screen size narrows, I have ensured that line height is abundant enough so that links don't stack on top of each other or feel too close. I intentionally left plenty of breathing room.
-* Per the professor's feedback during my live presentation, I have applied a clean-designed hamburger menu for mobile to ensure the menu doesn't take up too much of the screen otherwise. I have custom made my own hamburger icon for this.
+* As the screen size narrows, I have ensured that line height is abundant enough so that links don't stack on top of each other in a messy way or feel too close. I intentionally left plenty of breathing room.
+* Per the professor's feedback during my live presentation, I have applied a clean-designed hamburger menu for mobile to ensure the menu doesn't take up too much of the screen otherwise. I have custom made my own hamburger icon for this. To expand the menu on mobile, click the hamburger icon. To collapse the menu, click on the hamburger icon yet again.
 
 ### High Quality Imagery
 
-* All images in the HTML have alt text attributed to them.
-* Images have dimensions included where appropriate, however as requested, I would like to mention that explicit width and height are not always incorporated, as I have certain images that I wanted to take up a certain percentage of their containers (e.g., hero images that take up 100% container width or carousel images that I intend to take up 75% of the width of their container). For these, including explicit width and height would not have been appropriate and would have negatively impacted an intentional design choice. I have chosen percentages for a responsive site experience.
-* All images were intentionally chosen to match the aesthetic of the website, and they have all been run through an image optimizer before being added to the multimedia folder. This image optimizer does not impact quality of images, but reduces the file size to make the site load faster. I have also sized images so that they don't take up excessive space if it's not needed. For example, images that function as hero images naturally are larger file sizes. However, images I have used for two-column layouts or four-column layouts are smaller, as they will never take up the full screen size. Meanwhile, icons used throughout the site take on more of a thumbnail or smaller size, as that is what is appropriate, given they will not be displayed in large formats.
-* All images used on the website as custom images taken by myself. This is an important aspect of the theme of my website, as I am a professional photographer. 
+* All images in the HTML have alt text attributed to them to ensure accessibility.
+* Images have dimensions included where appropriate. However as requested, I would like to mention that explicit width and height are not always incorporated in my design, as I have certain images that I wanted to take up certain percentage of their containers (e.g., hero images that take up 100% container width or carousel images that I intend to take up 75% of the width of their container). For these, including explicit width and height would not have been appropriate and would have negatively impacted an intentional design choice. I have chosen percentages for a responsive site experience.
+* All images were intentionally chosen to match the aesthetic of the website, and they have all been run through an image optimizer before being added to the multimedia folder. This image optimizer does not impact quality of images, but reduces the file size to make the site load faster. I have also sized images so that they don't take up excessive space if it's not needed. For example, images that function as hero images naturally are larger file sizes with larger dimensions. However, images I have used for two-column layouts or four-column layouts are smaller, as they will never take up the full desktop screen size. Meanwhile, icons used throughout the site take on more of a thumbnail or smaller size, as that is what is appropriate, given they will not be displayed in large formats.
+* All images used on the website are custom images taken by myself. This is an important aspect of the theme of my website, as I am a professional photographer. 
 
 ### Mechanics
 
@@ -73,7 +99,7 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 
 * I have applied meaningful id and class names in the HTML to make the css more understandable and provide meaning to my various elements used.
 * Comments are used throughout my HTML to ensure readability and for making future modifications easier. The markup is more navigable due to the comments.
-* I have incorporated semamtic HTML throughout the website, and have avoided using divs unless they genuinely were the most appropriate elements to use. You will notice all pages on the website include a header, main, and footer, at a bare-minimum. Beyond that, focus was put on ensuring I used as much semantic HTML as possible.
+* I have incorporated semamtic HTML throughout the website, and have avoided using divs unless they genuinely were the most appropriate elements to use. You will notice all pages on the website include a header, main, and footer, at a bare-minimum. Beyond that, focus was put on ensuring I used as much semantic HTML as possible. This includes, but is not limited to, using section tags, article tags, and aside tags.
 
 ### CSS Mastery
 
@@ -81,7 +107,7 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 
 * In regards to creativity, I have attempted to treat this as a professional website, with clean branding, good amounts of whitespace, consistent brand palette/color usage, and the like.
 
-* I have used media queries to ensure responsiveness for different screen sizes (I will speak to this in greater detail further down).
+* I have used media queries and Flexbox to ensure responsiveness for different screen sizes (I will speak to this in greater detail further down).
 
 * I have used a variety of selectors, including class selectors, element/type selectors, id selectors, and descendant selectors. As much as possible, I have aimed to focus on element/type and class selectors to ensure greater reusability on the code.
 
@@ -103,39 +129,39 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 
 * Per the recommendation in week 2's assignment, I have included all styles in one css file. This makes sense in this case, as the website is not a large enterprise endeavor. Should that change at any point, one could make the case for a multitude of stylesheets.
 
-* I have incorporated several distinct differences based on screen size, as I wanted each device size to really be comprehensive and beautiful on its own (see media queries explanation further down for details). Specifically, I have used media queries on 32 different elements on screens with a max width of 640 pixels, and I have used media queries on 19 different elements on screens with a min width of 641 pixels and a max width of 1024 pixels. Generally speaking, the 641 - 1024 pixel screens have more real estate and thus incorporate a lot of the same structure and design as larger screens, which is why they have less elements leveraging media queries. On the other end of the spectrum, smaller screen sizes require much resizing and redesigning.
+* I have incorporated several distinct differences based on screen size, as I wanted each device size to really be comprehensive and beautiful on its own (see media queries explanation further down for details). Specifically, I have used media queries on 39 different elements on screens with a max width of 640 pixels, and I have used media queries on 23 different elements on screens with a min width of 641 pixels and a max width of 1024 pixels. Generally speaking, the 641 - 1024 pixel screens have more real estate and thus incorporate a lot of the same structure and design as larger screens, which is why they have less elements leveraging media queries. On the other end of the spectrum, smaller screen sizes require much resizing and redesigning.
 
 * It's important for me to acknowledge that I have incorporated divs, but I have only done this when absolutely necessary and when a semantic element wouldn't work and would produce a warning from the validator. While warnings are listed as acceptable, I wanted to avoid them as much as possible.
 
-* There are several distinct differences in how the pages are presented based on screen size. Per the professor's recommendation, the branding and colors remain consistent, no matter the screen size. This is to ensure that the viewer doesn't get confused about which site they are on; it's best practice for the branding to stay the same. Where I have incorporated changes is in doing things like modifying the navigation bar for mobile, changing font size depending on screen size, hiding elements on smaller screens for a more streamlined view, changing text alignment on smaller screens to make reading easier, etc. I go into full detail on how media queries were used to accomplish this below. Before we begin, these are the screen sizes and names I'll be referring to in this report:
+* There are several distinct differences in how the pages are presented based on screen size. Per the professor's recommendation, the branding and colors remain consistent, no matter the screen size. This is to ensure that the viewer doesn't get confused about which site they are on; it's best practice for the branding to stay the same. Where I have incorporated changes is in doing things like modifying the navigation bar for mobile, changing font size depending on screen size, hiding elements on smaller screens for a more streamlined view, changing the number of columns, changing text alignment on smaller screens to make reading easier, etc. I go into full detail on how media queries were used to accomplish this below. Before we begin, these are the screen sizes and names I'll be referring to in this report:
 
-  1. Anything referred to as **tablet** is a screen size of: *minimum 641 pixels and maximum 1024 pixels*.
-  2. Anything referred to as **mobile** is a screen size of: *maximum 640 pixels*.
+  1. Anything referred to as **mobile** is a screen size of: *maximum 640 pixels*.
+  2. Anything referred to as **tablet** is a screen size of: *minimum 641 pixels and maximum 1024 pixels*.
   3. Anything referred to as **desktop** is the default and is *1025 pixels or more*.
 
-  I have used media queries to make the following substantial changes using media queries, based on the aforementioned screen sizes. This is by no means a comprehensive list of changes made using media queries, however, as that would be extremely long:
+  I have used media queries to make the following substantial changes, based on the aforementioned screen sizes. This is by no means a comprehensive list of changes made using media queries, however, as that would be extremely long:
 
   * On mobile, the logo image is no longer floated and is represented as a block level element so it can stack above the navigation links.
-  * The navigation bar adapts based on screen size. From desktop to tablet dimensions, the navigation link font gets smaller to accommodate the smaller screen size, and a chunky underline is added to all navigation links.  In the mobile version, the links are stacked on top of each other, rather than horizontal. The font is also reduced in size, all links have a chunky underline, they are left aligned, and have had their padding and left margin modified to look good on a smaller screen size.
+  * The navigation bar adapts based on screen size. From desktop to tablet dimensions, the navigation link font gets smaller to accommodate the smaller screen size, and a chunky underline is added to all navigation links.  In the mobile version, the links are stacked on top of each other, rather than horizontal (and they use a hamburger menu to show and hide). The font is also reduced in size, all links have a chunky underline, they are left aligned, and have had their padding and left margin modified to look good on a smaller screen size.
   * The h1 on tablet is smaller than desktop, the line height is modified, and the font weight is lighter. The h2 and h3 on tablet also have reduced font sizes and line heights as well. These changes made the text less large and intense when viewed on a smaller screen size like tablet.
   * The h1 on mobile is smaller than both desktop and tablet, the line height is modified, and the font weight is lighter. However, beyond that, the text is also aligned to the left, as it has been recommended in the design world for mobile versions to have left aligned text to make things easier to read. To accommodate the left alignment, the left and right margins had to be modified as well. This was to ensure there was enough space on either side of the text. The h2 and h3 elements on mobile also incorporate this reduction of font size, line height, the change to left alignment (in most cases), and the addition of margin on the left and right side. One thing to note: on mobile, the letter spacing on the h3 was also changed, as it looked too wide otherwise. It is now more condensed and cleaner.
-  * Since mobile h3s are left aligned (in most cases), I wanted to override that feature for h3's used on the image gallery cards. So those were modified to still be center aligned.
-  * The paragraph text size is also reduced in size on tablet, compared to desktop. On mobile, the paragraphs are even smaller, but the distinct difference is the change to left alignment, which incorporates the addition of margin on the left and right. I also modified the width of the paragraphs to be 80%, which makes for a cleaner and more streamlined design. The only exception to this on mobile is the price paragraph on the shop page's image gallery cards. For that text, I have used media queries to keep it center aligned.
-  * The image gallery cards (which represent the cards that the landscape prints are on) use media queries to have a width of 40% on tablet (compared to the default 22% on desktop). This allows the cards to take up more space on the smaller tablet size screen. Similarly, on mobile, a width of 80% is used to allow for each card to take up most of the width of the screen for a single column look on very small devices.
+  * Since mobile h3s are left aligned, I wanted to override that feature for h3's used on the image gallery cards. So those were modified to still be center aligned.
+  * The paragraph text size is also reduced in size on tablet, compared to desktop. On mobile, the paragraphs are even smaller, but the distinct difference is the change to left alignment, which incorporates the addition of margin on the left and right. I also modified the width of the paragraphs to be 80%, which makes for a cleaner and more streamlined design. There are exceptions to this on mobile; for example, the price paragraph on the shop page's image gallery cards. For that text, I have used media queries to keep it center aligned.
+  * The image gallery cards (which represent the cards that the framed landscape prints are on) use media queries to have a width of 40% on tablet (compared to the default 22% on desktop). This allows the cards to take up more space on the smaller tablet size screen. Similarly, on mobile, a width of 80% is used to allow for each card to take up most of the width of the screen for a single column look on very small devices.
   * Similarly, the four column info cards (e.g., used on the home page), take up 22% width on desktop and tablet, yet on mobile, they transition to 90% width of the flex container they are in.
   * On tablet size screens, I used media queries to make my unordered lists have a larger width so that they take up more screen real estate. Their font size is also reduced to accommodate the smaller screen size. On desktop, the percentage of screen the unordered list took up was much smaller, to leverage whitespace. I have done a similar thing with mobile, increasing the width of the unordered list and reducing the font size.
   * On tablet, the td elements for my table have a reduced font size and a reduced line height to accommodate the smaller screen size. For mobile, I have reduced the font size and line height of the td elements even more, for the even smaller screen size. In addition, on mobile, I have also reduced the font size on the th elements.
   * On desktop, all three columns in the table on the biography page are visible. To make the mobile design more streamlined and less cluttered, I have hidden that last column using media queries for the publication location. For tablet, I have done the same, but for publication date/year.
   * On desktop and tablet, the aside takes up 40% of the width and gives a sort of multi-column effect with the content that sits next to it (I used float to accomplish this). On mobile, however, that didn't make sense, so I changed float to none so the aside could take up its own column and sit above the content it previously sat next to on tablet and desktop. The aside is now centered and takes an 80% width.
   * On desktop, the iframe used to embed YouTube videos on the biography page has a width of 60%, and media queries were used to change this to 100% for both tablet and mobile.
-  * **Extra Credit Note: **I have used Flexbox to create a two column layout on portions of the home page, the biography page, the travels page, and the form submission confirmation page. However, on mobile, I do not want two columns for these spots; I'd rather have one, so the content can be larger. Thus I have used media queries to do that and change the flex container to display as a block level element. The cards/contents in that container now have a width of 100% instead of 50%, as the 50% was only relevant for tablet and desktop. Similarly, on the articles page, I have also used Flexbox to create a two column layout for displaying four of my articles. This two column layout is consistent on both desktop and tablet settings, but turns into a one column layout when you transition to mobile-like width.
-  * Generally speaking, media queries are used on this site to make font size and text alignment feel proportionate to screen size. They are also used to ensure that multi-column layouts render as a single column on mobile, as that makes more sense on that screen size. All of these changes are to increase readability, while still maintaining the intended design.
+  * **Extra Credit Note: **I have used Flexbox to create a two column layout on portions of the home page, the biography page, the travels page, and the form submission confirmation page. However, on mobile, I do not want two columns for these spots; I'd rather have one, so the content can be larger. Thus I have used media queries to do that and change the flex container to display like a block level element. The cards/contents in that container now have a width of 100% instead of 50%, as the 50% was only relevant for tablet and desktop. Similarly, on the articles page, I have also used Flexbox to create a two column layout for displaying four of my articles. This two column layout is consistent on both desktop and tablet settings, but turns into a one column layout when you transition to mobile-like width.
+  * Generally speaking, media queries are used on this site to make font size and text alignment feel proportionate to screen size. They are also used to ensure that multi-column layouts render as a single column on mobile, as that makes more sense on that screen size. All of these changes are to increase readability, while still maintaining the intended design and aesthetic.
 
 ### JavaScript and DOM Mastery
 
 At the most basic level, JavaScript was used to make the buttons on my website interactive, whether that was a button using window.open() to go to an external site or calling functions that performed other conditional actions.
 
-You'll notice that, aside from my h1 animations, I don't really use the same JavaScript across all pages consistently. It tends to vary on a page-by-page basis, unlike, for example, my styles. Given that, I have opted to split up my JavaScript into various different files to ensure faster load times.
+You'll notice that, aside from my h1 animations and navigation hamburger functionality for mobile, I don't really use the same JavaScript across all pages consistently. It tends to vary on a page-by-page basis, unlike, for example, my styles. Given that, I have opted to split up my JavaScript into various different files to ensure faster load times.
 
 All JavaScript files can be found in the js folder. I will avoid speaking to the shopapp.js and articlesapp.js files, as those I go into more detail on in the Vue section (below). But I will speak to all the other js files below and what they do.
 
@@ -181,7 +207,7 @@ I also set a slide index that keeps track of which slide we're on.
 
 The nextSlide() function's responsibility is to hide the current slide and make the one in the next index over visible (we are changing the class name of the current slide to "hidden_slide" and the next one to "visible_slide"). 
 
-The previousSlide() function does something similar, but in the opposite direction. It too hides the current slide, by changing its class name (which in turn will change its styles and make it invisible). However, it will now make the previous image (by index) the visible one.
+The previousSlide() function does something similar, but in the opposite direction. It, too, hides the current slide, by changing its class name (which in turn will change its styles and make it invisible). However, it will now make the previous image (by index) the visible one.
 
 **Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: the use of let and const rather than var.
 
@@ -203,7 +229,7 @@ Furthermore, I perform validation for a phone number, which accepts a few differ
 
 When a form field is valid and the user submits, a success message is written to the DOM. Otherwise, a meaningful error message is written to the DOM. This is to ensure that the user knows what they did wrong and can course-correct when filling out the form again. I have used colors and bold text to get the point across.
 
-Specifically, I have spans that are hidden when the form is first accessed. I then use document.getElementById() to grab the necessary span to write either an error or success to the DOM, as appropriate in that scenario.
+Specifically, I have spans that are hidden when the form is first accessed. I then use document.getElementById() to grab the necessary span to write either a meaningful error message or a success message to the DOM, as appropriate in that scenario.
 
 **Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: using const and let rather than var. I have also used an arrow function within the addEventListener() method.
 
@@ -267,9 +293,11 @@ Lastly, v-on:click is used on the "Go to Article" buttons to call the window.ope
 
 ### Validation/Accessibility
 
-* In order to make the website accessible, I have ensured that all images and appropriate and descriptive alt text. In addition to that, all form controls used on the site have labels included with them.
+* In order to make the website accessible, I have ensured that all images have appropriate and descriptive alt text. In addition to that, all form controls used on the site have labels included with them.
 
-* Not only is using semantic HTML introduced with HTML5 important from a development standpoint, as it provides additional meaning to the code when I look at it to make modifications as a developer, but it is also an important aspect of accessibility for screen readers. I want my site to be accessible to everyone, which is why ensuring I have used semantic HTML as much as possible has been a priority. As a basis for this, for example, all pages have at the bare minimum  a header element (with a nav element nested within it), a main element, and a footer element. These provide context for those using screen readers, and from a code standpoint, I also can see how it makes my code easier to digest and modify. The meaning and intent are clear.
+* In case Google Fonts cannot be rendered or accessed, I have specified fallback fonts for my site.
+
+* Not only is using semantic HTML introduced with HTML5 important from a development standpoint, as it provides additional meaning to the code when I look at it to make modifications as a developer, but it is also an important aspect of accessibility for screen readers. I want my site to be accessible to everyone, which is why ensuring I have used semantic HTML as much as possible has been a priority. As a basis for this, for example, all pages have at the bare minimum  a header element (with a nav element nested within it), a main element, and a footer element. These provide context for those using screen readers. Furthermore, from a code standpoint, I also can see how it makes my code easier to digest and modify. The meaning and intent are clear.
 
   Other examples of semantic HTML elements used on my website include (but are not limited to): the table tag (to indicate a table of data), the form tag (to indicate a form the user can fill out), the article tag (to indicate a self-contained component on a page), the section tag (which I commonly used to group related content into grouped sections), and the aside (which I use for content that feels more like an informational sidebar rather than primary content).
 
@@ -297,11 +325,11 @@ I also have another example of a four column layout on the travels page, as can 
 
 <img width="1667" alt="Screen Shot 2021-12-10 at 2 48 30 PM" src="https://user-images.githubusercontent.com/74014027/145645593-271d33b5-d3dc-4678-8201-7639346fa4d6.png">
 
-As you scroll further down the page, you'll see another h2 "Let's Go on a Journey" which has an introductory blurb. Underneath that blurb paragraph, you'll come across aa two column layout (on desktop view). This was also accomplished using Flexbox. I use both the two column and four column layout throughout the website, but this page highlights both of them nicely in one place. I'll provide an image linked below of this part of the website:
+As you scroll further down the home page, you'll see another h2 "Let's Go on a Journey" which has an introductory blurb. Underneath that blurb paragraph, you'll come across aa two column layout (on desktop view). This was also accomplished using Flexbox. I use both the two column and four column layout throughout the website, but this page highlights both of them nicely in one place. I'll provide an image linked below of this part of the website:
 
 <img width="1061" alt="Screen Shot 2021-12-10 at 10 47 24 AM" src="https://user-images.githubusercontent.com/74014027/145618801-fbc66021-c0a3-4d23-ab45-cfa22e2ec770.png">
 
-Flexbox has allowed me to create a website with a more complex layout that felt more dynamic and interesting than having everything lined up in single columns going down the page, as would be standard otherwise for any block level elements. You'll notice the number of columns does change as screen size is modified. For example, on the home page, the two column layout is two columns on desktop and tablet screen sizes, but becomes single column on desktop, as it recommended design practice. Meanwhile, the four column layout, I have opted to keep four columns on desktop only, and have them become single column on both tablet and mobile.
+Flexbox has allowed me to create a website with a more complex layout that felt more dynamic and interesting than having everything lined up in single columns going down the page, as would be standard otherwise for any block level elements. You'll notice the number of columns does change as screen size is modified. For example, on the home page, the two column layout is two columns on desktop and tablet screen sizes, but becomes single column on desktop, as that is recommended design best practice. Meanwhile, for the four column layout, I have opted to keep four columns on desktop only, and have them become single column on both tablet and mobile.
 
 Another use of Flexbox on my website, as mentioned earlier in this report, was on my articles page, where I wanted to have card-like columns for each article. A linked image below shows this design using Flexbox yet again:
 
@@ -309,11 +337,11 @@ Another use of Flexbox on my website, as mentioned earlier in this report, was o
 
 
 
-Please note, the images above are not an exhaustive collection of all uses of Flexbox on my website, but rather a sample example.
+Please note, the images linked above are not an exhaustive collection of all uses of Flexbox on my website, but rather a sample example.
 
 #### Adding ES6 or Higher Functionality + Including Content From Module 5 (Including the Fetch API)
 
-I have used multiple ES6 functionality and higher, along with the content taught in Module 5 regarding fetch, async, and await. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher, you'll notice an abundant use of template strings throughout the project's JavaScript files. I have also leveraged the for...each loop, arrow functions, using let and const instead of var, and promises. My goal was to test out several ES6 functionalities in this term project.
+I have used multiple ES6 functionality and higher, along with the content taught in Module 5 regarding fetch, async, and await. Specifically, I have used fetch to grab data from a JSON file I created. This file contains a list of places I have on my travel bucket list, which is pulled and populated in a list on the travels page on my website. For ES6 functionality and higher, you'll notice an abundant use of template strings throughout the project's JavaScript files. I have also leveraged the for...of loop, arrow functions, using let and const instead of var, and promises. My goal was to test out several ES6 functionalities in this term project.
 
 Please note, I have provided detailed notes about where ES6 and higher functionality was included within my section above on JavaScript and DOM mastery. Should you like to see more details on this, please reference the **Extra Credit Note** sections in that area of the report.
 
