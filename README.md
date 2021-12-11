@@ -302,6 +302,10 @@ Lastly, v-on:click is used on the "Go to Article" buttons to call the window.ope
 
 * In case Google Fonts cannot be rendered or accessed, I have specified fallback fonts for my site.
 
+* I have run my css through a validator and it passes with no errors and no warnings.
+
+* I have run all HTML pages through validators (all the ones that don't use Vue) and they all pass with no errors and no warnings. Please see how I have performed validation on Vue pages in the section below.
+
 * Not only is using semantic HTML introduced with HTML5 important from a development standpoint, as it provides additional meaning to the code when I look at it to make modifications as a developer, but it is also an important aspect of accessibility for screen readers. I want my site to be accessible to everyone, which is why ensuring I have used semantic HTML as much as possible has been a priority. As a basis for this, for example, all pages have at the bare minimum  a header element (with a nav element nested within it), a main element, and a footer element. These provide context for those using screen readers. Furthermore, from a code standpoint, I also can see how it makes my code easier to digest and modify. The meaning and intent are clear.
 
   Other examples of semantic HTML elements used on my website include (but are not limited to): the table tag (to indicate a table of data), the form tag (to indicate a form the user can fill out), the article tag (to indicate a self-contained component on a page), the section tag (which I commonly used to group related content into grouped sections), and the aside (which I use for content that feels more like an informational sidebar rather than primary content).
