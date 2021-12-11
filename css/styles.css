@@ -1021,6 +1021,11 @@ footer a {
         text-decoration-thickness: 0.2rem; /* make underline chunky */
     }
 
+    /* show navigation based on class */
+    .nav_links.view {
+        display: block;
+    }
+
     /* Style of the hamburger icon */
     .hamburger {
     display: block; /* un-hide on mobile */
