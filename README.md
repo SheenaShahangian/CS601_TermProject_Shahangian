@@ -49,7 +49,7 @@ See the linked image below for a brief recap of my target audience for this port
 
 ## Noteworthy Changes Made Since My Live Presentation
 
-I have made sure to incorporate all feedback provided to me during my live presentation on Friday. The first thing I did was make sure I implemented a hamburger style menu for mobile. For desktop and tablet, you will see the standard menu (with some style changes depending on screen size), but per the professor's request to not clutter the page too much, I have created an interactive hamburger for mobile screen sizes.
+I have made sure to incorporate all feedback provided to me during my live presentation on Friday. The first thing I did was make sure I implemented a hamburger style menu for mobile, as requested. For desktop and tablet, you will see the standard menu (with some style changes depending on screen size), but per the professor's request to not clutter the page too much, I have created an interactive hamburger for mobile screen sizes.
 
 Per the request made about meaningful validation on the contact form, all user input errors that I write to the DOM on my contact form how contain detailed information on how to provide a valid input.
 
@@ -68,10 +68,15 @@ On tablet and mobile, I make all of these elements block level, as I believe thi
 * All pages on the website clearly belong to the same site, and the design and layout are consistent. I have intentionally used class selectors in my css to allow the reuse of designs on various pages. This further enhances the consistency in design and layout on the page.
 * As I speak to in greater detail in the CSS section, the site is responsive to three different screen sizes. I want to ensure my site functions for the greatest number of users as possible.
 
+I have linked an image below showing the brand palette for my website. You'll notice the six swatch cards are similar in aesthetic and tone and have a very intentional feeling to them. Meanwhile, the color for the button is bright and loud. This is intentional marketing best practice, as you want your buttons to be easily noticed and clicked on. Bright colors make this possible. While there are six swatches primarily used, you will also notice that there are really only four colors used, as two are in the green family, two are in the pink family, one is in the brown/red family, and one is an off-white. This choice was intentional to ensure the color palette felt professional and not over-the-top. Yet, I did want to make sure the website had color, so that emphasis could be made on important elements on the site. This color palette achieves that mission.
+
+<img width="911" alt="Screen Shot 2021-12-11 at 11 55 38 AM" src="https://user-images.githubusercontent.com/74014027/145688343-9855822b-4c2c-4f57-b436-d4ee8577333b.png">
+
 ### Text
 
 * I have opted to use typefaces that are clean and legible. All typefaces used are san serif, as those are most legible when read on the screen (as indicated in our textbook).
-* I have chosen to only use 2 typefaces, per standard graphic design recommendation to not have too many typefaces in a single design. However, to ensure variety, I have leveraged various weights of the two typefaces. You will notice there feels like there is a variety of typefaces are used, while still remaining cohesive in style. This is acheived by using a variety of weights and casing, all within the same font family.
+* I have opted to go above and beyond by using Google Fonts, rather than the standard system fonts. I have, however, made sure to set fallback options for those Google Fonts in case the user's device cannot access them.
+* I have chosen to only use 2 typefaces, per standard graphic design recommendation to not have too many typefaces in a single design. However, to ensure variety, I have leveraged various weights of the two typefaces. You will notice there feels like there is a variety of typefaces that are used, while still remaining cohesive in style. This is acheived by using a variety of weights and casing, all within the same font family.
 * All content has been proof-read for quality, presentation, and errors. My IDE performs appropriate spell-checking as well.
 
 ### Navigation
@@ -99,7 +104,7 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 
 * I have applied meaningful id and class names in the HTML to make the css more understandable and provide meaning to my various elements used.
 * Comments are used throughout my HTML to ensure readability and for making future modifications easier. The markup is more navigable due to the comments.
-* I have incorporated semamtic HTML throughout the website, and have avoided using divs unless they genuinely were the most appropriate elements to use. You will notice all pages on the website include a header, main, and footer, at a bare-minimum. Beyond that, focus was put on ensuring I used as much semantic HTML as possible. This includes, but is not limited to, using section tags, article tags, and aside tags.
+* I have incorporated semantic HTML throughout the website, and have avoided using divs unless they genuinely were the most appropriate elements to use. You will notice all pages on the website include a header, main, and footer, at a bare-minimum. Beyond that, focus was put on ensuring I used as much semantic HTML as possible. This includes, but is not limited to, using section tags, article tags, and aside tags.
 
 ### CSS Mastery
 
@@ -135,15 +140,15 @@ The site has been thoroughly tested to make sure there are no missing graphics o
 
 * There are several distinct differences in how the pages are presented based on screen size. Per the professor's recommendation, the branding and colors remain consistent, no matter the screen size. This is to ensure that the viewer doesn't get confused about which site they are on; it's best practice for the branding to stay the same. Where I have incorporated changes is in doing things like modifying the navigation bar for mobile, changing font size depending on screen size, hiding elements on smaller screens for a more streamlined view, changing the number of columns, changing text alignment on smaller screens to make reading easier, etc. I go into full detail on how media queries were used to accomplish this below. Before we begin, these are the screen sizes and names I'll be referring to in this report:
 
-  1. Anything referred to as **mobile** is a screen size of: *maximum 640 pixels*.
-  2. Anything referred to as **tablet** is a screen size of: *minimum 641 pixels and maximum 1024 pixels*.
-  3. Anything referred to as **desktop** is the default and is *1025 pixels or more*.
+  1. Anything referred to as **mobile** in this report is a screen size of: *maximum 640 pixels*.
+  2. Anything referred to as **tablet** in this report is a screen size of: *minimum 641 pixels and maximum 1024 pixels*.
+  3. Anything referred to as **desktop** in this report is the default and is *1025 pixels or more*.
 
   I have used media queries to make the following substantial changes, based on the aforementioned screen sizes. This is by no means a comprehensive list of changes made using media queries, however, as that would be extremely long:
 
   * On mobile, the logo image is no longer floated and is represented as a block level element so it can stack above the navigation links.
   * The navigation bar adapts based on screen size. From desktop to tablet dimensions, the navigation link font gets smaller to accommodate the smaller screen size, and a chunky underline is added to all navigation links.  In the mobile version, the links are stacked on top of each other, rather than horizontal (and they use a hamburger menu to show and hide). The font is also reduced in size, all links have a chunky underline, they are left aligned, and have had their padding and left margin modified to look good on a smaller screen size.
-  * The h1 on tablet is smaller than desktop, the line height is modified, and the font weight is lighter. The h2 and h3 on tablet also have reduced font sizes and line heights as well. These changes made the text less large and intense when viewed on a smaller screen size like tablet.
+  * The h1 on tablet is smaller than desktop, the line height is modified, and the font weight is lighter. The h2 and h3 on tablet also have reduced font sizes and line heights as well. These changes made the text less large and intense when viewed on a smaller screen size like a tablet.
   * The h1 on mobile is smaller than both desktop and tablet, the line height is modified, and the font weight is lighter. However, beyond that, the text is also aligned to the left, as it has been recommended in the design world for mobile versions to have left aligned text to make things easier to read. To accommodate the left alignment, the left and right margins had to be modified as well. This was to ensure there was enough space on either side of the text. The h2 and h3 elements on mobile also incorporate this reduction of font size, line height, the change to left alignment (in most cases), and the addition of margin on the left and right side. One thing to note: on mobile, the letter spacing on the h3 was also changed, as it looked too wide otherwise. It is now more condensed and cleaner.
   * Since mobile h3s are left aligned, I wanted to override that feature for h3's used on the image gallery cards. So those were modified to still be center aligned.
   * The paragraph text size is also reduced in size on tablet, compared to desktop. On mobile, the paragraphs are even smaller, but the distinct difference is the change to left alignment, which incorporates the addition of margin on the left and right. I also modified the width of the paragraphs to be 80%, which makes for a cleaner and more streamlined design. There are exceptions to this on mobile; for example, the price paragraph on the shop page's image gallery cards. For that text, I have used media queries to keep it center aligned.
@@ -305,6 +310,14 @@ Lastly, v-on:click is used on the "Go to Article" buttons to call the window.ope
 
 Please note that if you run the HTML on the shop.html page or the articles.html page, you will receive inevitable errors and warnings for the parts of the page that have incorporated Vue, as the validator does not understand Vue. That said, I have ensured that these pages passed all validations prior to the addition of Vue, and also double checked that all errors were Vue-related and not actual HTML errors.
 
+I have provided a screenshot image link below of the shop.html page run through HTML validation to show that the errors and warnings are all Vue related. For example, when it says the a tag is missing an href attribute or img tag is missing the src attribute, that is because I have used Vue to do that.
+
+<img width="1594" alt="Screen Shot 2021-12-11 at 11 06 02 AM" src="https://user-images.githubusercontent.com/74014027/145687028-56bdd2d2-75a6-4229-ab28-902459f7973b.png">
+
+I have provided a screenshot image link below of the articles.html page run through HTML validation to show that the errors and warnings are all Vue related. Again, you will see a similar trend of the validator complaining about attributes not being allowed or attributes being missing. All attributes are there, just simply using Vue.
+
+<img width="1586" alt="Screen Shot 2021-12-11 at 11 06 12 AM" src="https://user-images.githubusercontent.com/74014027/145687079-0ead154d-9d19-4719-85df-0f23c61f8083.png">
+
 
 
 ### Extra Credit - How I Went Above and Beyond
@@ -325,11 +338,11 @@ I also have another example of a four column layout on the travels page, as can 
 
 <img width="1667" alt="Screen Shot 2021-12-10 at 2 48 30 PM" src="https://user-images.githubusercontent.com/74014027/145645593-271d33b5-d3dc-4678-8201-7639346fa4d6.png">
 
-As you scroll further down the home page, you'll see another h2 "Let's Go on a Journey" which has an introductory blurb. Underneath that blurb paragraph, you'll come across aa two column layout (on desktop view). This was also accomplished using Flexbox. I use both the two column and four column layout throughout the website, but this page highlights both of them nicely in one place. I'll provide an image linked below of this part of the website:
+As you scroll further down the home page, you'll see another h2 "Let's Go on a Journey", which has an introductory blurb. Underneath that blurb paragraph, you'll come across a two column layout (on desktop view). This was also accomplished using Flexbox. I use both the two column and four column layout throughout the website, but this page highlights both of them nicely in one place. I'll provide an image linked below of this part of the website:
 
 <img width="1061" alt="Screen Shot 2021-12-10 at 10 47 24 AM" src="https://user-images.githubusercontent.com/74014027/145618801-fbc66021-c0a3-4d23-ab45-cfa22e2ec770.png">
 
-Flexbox has allowed me to create a website with a more complex layout that felt more dynamic and interesting than having everything lined up in single columns going down the page, as would be standard otherwise for any block level elements. You'll notice the number of columns does change as screen size is modified. For example, on the home page, the two column layout is two columns on desktop and tablet screen sizes, but becomes single column on desktop, as that is recommended design best practice. Meanwhile, for the four column layout, I have opted to keep four columns on desktop only, and have them become single column on both tablet and mobile.
+Flexbox has allowed me to create a website with a more complex layout that felt more dynamic and interesting than having everything lined up in single columns going down the page, as would be standard otherwise for any block level elements. You'll notice the number of columns does change as screen size is modified. For example, on the home page, the two column layout is two columns on desktop and tablet screen sizes, but becomes single column on desktop, as that is recommended design best practice. Meanwhile, for the four column layout, I have opted to keep four columns on desktop only, and have them become a single column on both tablet and mobile.
 
 Another use of Flexbox on my website, as mentioned earlier in this report, was on my articles page, where I wanted to have card-like columns for each article. A linked image below shows this design using Flexbox yet again:
 
