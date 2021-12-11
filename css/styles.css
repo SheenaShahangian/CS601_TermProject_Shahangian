@@ -735,6 +735,40 @@ input[type=submit] {
 }
 
 
+/* Style the travel quiz form */
+form#travel_quiz {
+    background-color: #f8f4f1;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+    margin: 1.4rem auto;
+    width: 45%;
+    border-radius: 20px;
+}
+
+/* Use Flexbox to align labels left and selects right */
+.flex_form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style of the text in the selector boxes on the quiz form */
+.quiz_selector {
+    text-align: right; /* to be right aligned */
+}
+
+/* Style of the button on the travel quiz */
+#travel_quiz button {
+    background-color: #f8f4f1;
+}
+
+/* Hover style of the button on the travel quiz */
+#travel_quiz button:hover {
+    background-color: #f17f6a;
+}
+
+
 
 
 /* --------------------- FOOTER STYLES ----------------------- */
@@ -915,7 +949,33 @@ footer a {
     iframe {
         width: 100%;
     }
+
+
+    /* ------------------------ QUIZ FORM STYLES FOR TABLET -------------------------- */
+
+    /* Style of the divs that contain labels and selects on tablet */
+    .flex_form {
+        display: block; /* change from flex to block */
+        width: 90%;
+    }
+
+    /* Style the labels so they are block level on tablet */
+    .flex_form label.quiz_label {
+        display: block;
+    }
+
+    /* Style the selects so they are block level on tablet */
+    .flex_form select {
+        display: block;
+    }
+
+    /* Style of the text in the selector boxes on the quiz form */
+    .quiz_selector {
+        text-align: left; /* to be left aligned */
+    }
+
 }
+
 
 
 
@@ -1179,6 +1239,35 @@ footer a {
     .form_div {
         margin: 1.4rem auto;
         width: 80%;
-}
+    }
+
+
+    /* ------------------------ QUIZ FORM STYLES FOR MOBILE -------------------------- */
+
+    /* Style the travel quiz form on mobile to take up more width */
+    form#travel_quiz {
+        width: 70%;
+    }
+
+    /* Style of the divs that contain labels and selects on mobile */
+    .flex_form {
+        display: block; /* change from flex to block */
+        width: 95%;
+    }
+
+    /* Style the labels so they are block level on mobile */
+    .flex_form label.quiz_label {
+        display: block;
+    }
+
+    /* Style the selects so they are block level on mobile */
+    .flex_form select {
+        display: block;
+    }
+
+    /* Style of the text in the selector boxes on the quiz form */
+    .quiz_selector {
+        text-align: left; /* to be left aligned */
+    }
 }
 
