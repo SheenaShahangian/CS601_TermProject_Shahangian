@@ -100,7 +100,7 @@ function validateUserInput() {
     if (!emailRegex.test(emailContents)) {
 
         // email error message to show the user 
-        let emailErrorMsg = "Invalid. Please use the format sheenas@bu.edu";
+        let emailErrorMsg = "Invalid. Please use the format: sheenas@bu.edu";
         
         // show invalid message next to email input field
         showErrorMessage(emailErrorMsg, "email_error_msg");
@@ -125,7 +125,7 @@ function validateUserInput() {
     if (!phoneRegex.test(phoneContents)) {
 
         // phone number error message to show the user 
-        let phoneErrorMsg = "Invalid. Please use the format 678-925-9183";
+        let phoneErrorMsg = "Invalid. Please use the format: 678-925-9183";
         
         // show invalid message next to email input field
         showErrorMessage(phoneErrorMsg, "phone_error_msg");
