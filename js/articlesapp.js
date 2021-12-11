@@ -7,7 +7,7 @@ let articlesapp = new Vue({
         articlesIntroParagraph: `As a wedding industry professional, it's my job to know the ins and outs of the industry. 
         It's this skill set that has made me a freelance writer for Green Wedding Shoes, a major US-based wedding blog. 
         I write on all sorts of wedding planning related topics, providing helpful advice and guidance to couples as they 
-        put together their dream wedding day. In addition to my writing for Green Wedding Shoes, I have also submitting my 
+        put together their dream wedding day. In addition to my writing for Green Wedding Shoes, I have also submitted my 
         writing to a few other publications, where I've shared my experiences as an elopement photographer, along with my 
         journey as a woman in the great outdoors. This is just a small sample of my writing.`,
 
@@ -52,7 +52,7 @@ let articlesapp = new Vue({
 
         /* ----------------- DATA ABOUT ARTICLE BLURBS -----------------  */
         // blurbs about each article when the user wants to read more
-        articleOneBlurb: `In this guide, I go into depth on the etiquette of sending wedding invitations and how you an properly plan for the process.`,
+        articleOneBlurb: `In this guide, I go into depth on the etiquette of sending wedding invitations and how you can properly plan for the process.`,
         articleTwoBlurb: `In my article for the Outbound, I dive into my experience with the great outdoors and how I went from a city girl to someone who 
         lives for outdoors adventures.`,
         articleThreeBlurb: `In my Thought Catalog article, I explain why elopements are not a trend created from the pandemic, and why they are (and have been) a
