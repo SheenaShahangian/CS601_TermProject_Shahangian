@@ -56,7 +56,7 @@ The last target audience would be anyone interested in buying landscape prints f
 * All hyperlinks, whether in the navigation and beyond, are meaningful in their names.
 * All page titles are appropriate and refer exactly to what that page is about.
 * As the screen size narrows, I have ensured that line height is abundant enough so that links don't stack on top of each other or feel too close. I intentionally left plenty of breathing room.
-* I have personally found hamburger menus on mobile to be somewhat clunky, so I have opted for my own stacked navigation bar design, where all links are visible, much like they are on desktop.
+* Per the professor's feedback during my live presentation, I have applied a clean-designed hamburger menu for mobile to ensure the menu doesn't take up too much of the screen otherwise. I have custom made my own hamburger icon for this.
 
 ### High Quality Imagery
 
@@ -228,6 +228,12 @@ At the bottom of my travels page, I have incorporated a fun little quiz form tha
 I assigned ids to all of my selectors that are used for each question on the quiz. Then, within my travelform.js file, I use document.getElementById() to get the user's responses from these selectors. It's these responses that I use to determine the answer to the quiz.
 
 **Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: using let rather than var. I have also used template strings when concatenating the various aspects of the user results to write to the DOM.
+
+#### 7. nav.js
+
+This JavaScript file is used on every page of the website, as it is used to allow my hamburger menu to work. 
+
+**Extra Credit Note: **You'll notice in this JavaScript file the use of an ES6 feature: using let rather than var. I have also used a for...of loop, which is another ES6 feature.
 
 
 
