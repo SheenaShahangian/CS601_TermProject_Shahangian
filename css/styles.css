@@ -29,6 +29,16 @@ nav {
     height:120px;
 }
 
+/* Style of the hamburger icon */
+.hamburger {
+    display: none; /* hide as default, unless on mobile */
+    padding-top: 1rem;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+    width: 30px;
+    height: 30px;
+}
+
 
 /* Style of the navigation links */
 .nav_links {
@@ -43,6 +53,7 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
 }
+
 
 
 /* Style when navigation links are hovered over */
@@ -1001,13 +1012,19 @@ footer a {
     and with nav links each block level for a stacked look. */
     .nav_links {
         float: none;
-        display: block;
+        display: none;
         text-align: left;
         font-size: .85rem;
         padding: 0.9rem 0rem 0rem 0rem;
         margin-left: 1.5rem;
         text-decoration: underline; /* all links underlined */
         text-decoration-thickness: 0.2rem; /* make underline chunky */
+    }
+
+    /* Style of the hamburger icon */
+    .hamburger {
+    display: block; /* un-hide on mobile */
+    cursor: pointer;
     }
 
 
