@@ -71,7 +71,7 @@ function findTravelLocation() {
     }
 
     // Write the results to the page, replacing the quiz form
-    document.getElementById("travel_quiz").innerHTML = `${resultIntro}<p>${chosenLocation}</p>`;
+    document.getElementById("travel_quiz").innerHTML = `${resultIntro}<p class="rec_locale">${chosenLocation}</p>`;
 }
 
 

@@ -232,6 +232,11 @@ blockquote p {
     width: 50%; /* reduces possible text width for a chunkier look */
 }
 
+/* Center align paragraph result on the travel quiz */
+.rec_locale {
+    text-align: center;
+}
+
 
 /* --------------------- FEATURED ARTICLES STYLES ----------------------- */
 
