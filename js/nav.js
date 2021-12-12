@@ -8,7 +8,7 @@ let navLinks = document.querySelectorAll(".nav_links");
 when the user clicks on the hamburger menu icon. */
 function triggerMenuView() {
 
-    for (link of navLinks) {
+    for (let link of navLinks) {
         link.classList.toggle('view');
     }
 }

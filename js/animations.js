@@ -28,7 +28,7 @@ function eachLetterInSpan(textToConvert) {
     let index = 0;
     
     // iterate over each letter and make each one into a span so we can animate
-    for (letter of textToConvert) {
+    for (let letter of textToConvert) {
         animatedHeading.innerHTML += `<span class="letter_span">${textToConvert[index]}</span>`;
         index++; // increment index, as for...of loop doesn't keep tabs
     }

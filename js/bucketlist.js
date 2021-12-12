@@ -2,7 +2,7 @@
 putting that information in a list located in an aside on the travel page of the site */
 
 // get the travel bucket list container (which is a unordered list we need to populate)
-bucketListContainer = document.querySelector(".travel_list");
+let bucketListContainer = document.querySelector(".travel_list");
 
 // url for the JSON file containing bucket list data
 let locationsUrl = "https://vigilant-allen-c8453f.netlify.app/js/bucketlist.json";
