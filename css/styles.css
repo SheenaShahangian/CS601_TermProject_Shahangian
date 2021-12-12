@@ -1170,8 +1170,11 @@ footer a {
 
     /* Style the paragraphs for featured articles on mobile so they also aren't left aligned */
     .featured_article p {
-        margin: 0;
         text-align: center;
+    }
+
+    .featured_article p.publisher, .featured_article p {
+        margin-left: 0;
     }
 
 
